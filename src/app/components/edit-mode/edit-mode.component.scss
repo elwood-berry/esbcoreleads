@@ -1,0 +1,47 @@
+// VARIABLES
+$corePrimary: #003261;
+
+// COMPONENT SECTIONS
+:host {
+  // background-color: rgba(0, 255, 255, 0.1);
+
+  .core-card {
+    // background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+
+    // HEADER
+    .mat-card-header {
+      // background-color: rgba(0, 255, 255, 0.1);
+
+      ::ng-deep .mat-card-header-text {
+        // background-color: rgba(255, 94, 0, 0.1);
+        margin: 0;
+      }
+    }
+
+    // ACTIONS
+    .mat-card-actions {
+      // background-color: rgba(255, 94, 0, 0.1);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+
+// BUTTONS.
+.core-primary-btn {
+  background-color: $corePrimary;
+  color: #ffffff;
+  margin-bottom: 5px !important;
+  text-transform: uppercase;
+}
+.core-secondary-btn {
+  font-weight: 100;
+  margin-bottom: 5px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-transform: uppercase;
+}
