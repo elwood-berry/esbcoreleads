@@ -1,5 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-
+/*
+APPLICATION NAME GOES HERE
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com 
+*/
+import { Component } from '@angular/core';
 import {
   animate,
   state,
@@ -26,14 +30,18 @@ import { LeadsService } from '../../services/leads/leads.service';
     ])
   ]
 })
+
+// i.e. "export class TableExpandableRowsExample"
 export class ListModeComponent implements OnInit {
   // PROPERTIES
 
-  public dataSource = this.listData;
-  public leads: string = 'assets/data/data-lead/leads.json';
+  public dataSource = ELEMENT_DATA;
   public columnsToDisplay = ['Name', 'Email', 'Source', 'Sales Rep'];
   public expandedElement: Lead | null;
-  public listData: Lead[];
+  public leads: string = 'assets/data/data-lead/leads.json';
+  public listData;
+  // public listData: Lead[];
+
   constructor(private json: LeadsService) {
     // JSON: LEADS
     json.getData(this.leads).subscribe(result => {
@@ -52,6 +60,8 @@ export interface Lead {
   leadSource: string;
   leadSalesRep: string;
 }
+const ELEMENT_DATA = this.listData;
+// const ELEMENT_DATA: Lead[] = this.listData;
 
 // const ELEMENT_DATA: Lead[] = [
 //   {
