@@ -42,83 +42,73 @@ export interface Lead {
 
 const ELEMENT_DATA: Lead[] = [
   {
-    leadPosition: 1,
-    leadName: 'Michael Richards',
+    leadPosition: 1, // ID
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 2,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 3,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 4,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 5,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 6,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 7,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 8,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 9,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   },
   {
     leadPosition: 10,
-    leadName: 'Michael Richards',
+    leadName: 'Michael Richards', // Name
     leadEmail: 'email@email.com', // Email
-    leadSource: 'H', // Lead leadSource
-    leadSalesRep: `Hydrogen is a chemical element with symbol H and atomic number 1. With a standard
-        atomic weight of 1.008, hydrogen is the lightest element on the periodic table.` // Sales Rep
+    leadSource: 'Lead Source Goes Here', // Lead leadSource
+    leadSalesRep: `Sales Rep Name Goes Here` // Sales Rep
   }
 ];
