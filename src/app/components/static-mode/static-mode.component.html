@@ -11,59 +11,92 @@
   <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
 
   <mat-card-content>
-    <!-- TITLE -->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Title</small>
-      Marketing Director
-    </div>
+    <!-- ROW: STATIC DATA -->
+    <div class="core-row" fxLayout="row">
+      <!-- COLUMN #1 -->
+      <div class="core-column" fxLayout="column" fxFlex="25%">
+        <!-- TITLE -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Title</small>
+          Marketing Director
+        </div>
 
-    <!-- DEPARTMENT -->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Department</small>
-      Marketing
-    </div>
+        <!-- DEPARTMENT -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Department</small>
+          Marketing
+        </div>
 
-    <!-- ACCOUNT NAME -->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Account Name</small>
-      Acme Inc.
-    </div>
+        <!-- ACCOUNT NAME -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Account Name</small>
+          Acme Inc.
+        </div>
 
-    <!-- SALES REP -->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Sales Rep</small>
-      George Costanza
-    </div>
+        <!-- SALES REP -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Sales Rep</small>
+          George Costanza
+        </div>
+      </div>
+      <mat-divider [vertical]="true" class="core-divider"></mat-divider>
 
-    <!-- EMAIL -->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Email</small>
-      john.doe@email.com
-    </div>
+      <!-- COLUMN #2 -->
+      <div class="core-column" fxLayout="column" fxFlex="25%">
+        <!-- EMAIL -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Email</small>
+          john.doe@email.com
+        </div>
 
-    <!-- LEAD SOURCE-->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Lead Source</small>
-      Miami Conference
-    </div>
+        <!-- LEAD SOURCE-->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Lead Source</small>
+          Miami Conference
+        </div>
 
-    <!-- PHONE -->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Phone</small>
-      (000) 000-0000
-    </div>
+        <!-- PHONE -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Phone</small>
+          (000) 000-0000
+        </div>
 
-    <!-- STATUS -->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Status</small>
-      Active
-    </div>
+        <!-- STATUS -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Status</small>
+          Active
+        </div>
 
-    <!-- CORPORATE IDENTITY-->
-    <div class="static-mode-display" fxLayout="column">
-      <small>Corporate Identity</small>
-      Incorporated
+        <!-- CORPORATE IDENTITY-->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Corporate Identity</small>
+          Incorporated
+        </div>
+      </div>
+      <mat-divider [vertical]="true" class="core-divider"></mat-divider>
+
+      <!-- COLUMN #3 -->
+      <div class="core-column" fxLayout="column" fxFlex="50%">
+        <!-- BILLING ADDRESS -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Billing</small>
+          347 Don Shula Dr<br />
+          Suite #200<br />
+          Miami Gardens, FL 33056
+        </div>
+
+        <!-- BILLING ADDRESS -->
+        <div class="static-mode-display" fxLayout="column">
+          <small>Shipping</small>
+          347 Don Shula Dr<br />
+          Suite #200<br />
+          Miami Gardens, FL 33056
+        </div>
+      </div>
     </div>
+    <!-- [end] ROW: STATIC DATA -->
+
+    <mat-divider></mat-divider>
 
     <!-- NOTES-->
     <div class="static-mode-display" fxLayout="column">
