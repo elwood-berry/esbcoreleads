@@ -13,10 +13,13 @@ import { FormsModule } from '@angular/forms';
 import { MaterialLibraryModule } from '../assets/libs/material/material-library/material-library.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+// COMPONENTS
 import { AppComponent } from './app.component';
 import { StaticModeComponent } from './components/static-mode/static-mode.component';
 import { EditModeComponent } from './components/edit-mode/edit-mode.component';
 import { ListModeComponent } from './components/list-mode/list-mode.component';
+
+// SERVICES
 import { ListingsService } from './services/listings.service';
 import { LeadsService } from './services/leads/leads.service';
 
