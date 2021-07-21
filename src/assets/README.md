@@ -1,5 +1,30 @@
 # Project Log  
 
+## Task Log  
+
+---  
+
+### 2021.07.21
+
+#### Data Table 
+1. Row hover, change cursor to 'click'
+1. Color seperation from rows to editable area. 
+1. Wire up services for data to populate the form and its children.  
+1. 
+
+#### Dialog 
+1. Click link to open dialog with edit form inside it.
+
+#### Edit Form 
+1. Incorporate 'Error Matching' for required fields.
+1. Wire up services for country codes for phone number
+1. Wire up services for 
+
+#### Card: 'Static Mode'
+1. Create a placeholder for showing the activites associated with the lead (calls, emails, notes).  
+1. Color seperation from rows to editable area. 
+
+---  
 
 ## References  
 
