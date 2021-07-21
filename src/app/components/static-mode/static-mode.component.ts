@@ -7,7 +7,7 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
-import {EditModeComponentDialog} from ' from '@angular/material/dialog';';
+import { EditModeComponent } from '../edit-mode/edit-mode.component';
 
 @Component({
   selector: 'app-static-mode',
@@ -20,23 +20,14 @@ export class StaticModeComponent implements OnInit {
 
   ngOnInit() {}
 
-  // ---  
+  // ---
 
-  // EDIT LEAD 
+  // EDIT LEAD
   public openDialog() {
-    const dialogRef = this.dialog.open(EditModeComponentDialog); // ContentExampleDialog
+    const dialogRef = this.dialog.open(EditModeComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
-
 }
-
-
-
-// @Component({
-//   selector: 'dialog-content-example-dialog',
-//   templateUrl: 'dialog-content-example-dialog.html',
-// })
-// export class DialogContentExampleDialog {}

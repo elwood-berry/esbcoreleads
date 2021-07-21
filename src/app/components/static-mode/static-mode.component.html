@@ -6,9 +6,11 @@
       >Met John at the conference in Miami. He represents Acme, Inc. They are
       interested in web stores as well as other products.</mat-card-subtitle
     >
-    <mat-card-subtitle
-      ><a href="">[Edit Lead Information]</a></mat-card-subtitle
-    >
+
+    <!-- BUTTON: EDIT THIS LEAD -->
+    <mat-card-subtitle>
+      <button mat-button (click)="openDialog()">[Edit Lead Information]</button>
+    </mat-card-subtitle>
   </mat-card-header>
 
   <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
