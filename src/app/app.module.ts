@@ -14,7 +14,6 @@ import { MaterialLibraryModule } from '../assets/libs/material/material-library/
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { AppComponent } from './app.component';
-import { BaseFormComponent } from './components/base-form/base-form.component';
 import { StaticModeComponent } from './components/static-mode/static-mode.component';
 import { EditModeComponent } from './components/edit-mode/edit-mode.component';
 import { ListModeComponent } from './components/list-mode/list-mode.component';
@@ -27,7 +26,12 @@ import { ListModeComponent } from './components/list-mode/list-mode.component';
     MaterialLibraryModule,
     FlexLayoutModule
   ],
-  declarations: [AppComponent, BaseFormComponent, StaticModeComponent, EditModeComponent, ListModeComponent],
+  declarations: [
+    AppComponent,
+    StaticModeComponent,
+    EditModeComponent,
+    ListModeComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
