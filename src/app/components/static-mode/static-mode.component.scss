@@ -47,6 +47,14 @@ $corePrimary: #003261;
   margin-right: 0 !important;
   text-transform: uppercase;
 }
+.core-link-btn {
+  padding: 0;
+
+  ::ng-deep .mat-button-wrapper {
+    color: $corePrimary;
+    text-decoration: underline;
+  }
+}
 
 // ---
 /*
