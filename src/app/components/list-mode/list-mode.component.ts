@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import {
   animate,
   state,
@@ -6,6 +7,9 @@ import {
   transition,
   trigger
 } from '@angular/animations';
+
+// SERVICE
+import { LeadsService } from '../../services/leads/leads.service';
 
 @Component({
   selector: 'app-list-mode',
@@ -23,11 +27,20 @@ import {
   ]
 })
 export class ListModeComponent implements OnInit {
-  dataSource = ELEMENT_DATA;
-  columnsToDisplay = ['leadName', 'leadEmail', 'leadSource', 'leadSalesRep'];
-  expandedElement: Lead | null;
+  // PROPERTIES
 
-  constructor() {}
+  public dataSource = this.listData;
+  public leads: string = 'assets/data/data-lead/leads.json';
+  public columnsToDisplay = ['Name', 'Email', 'Source', 'Sales Rep'];
+  public expandedElement: Lead | null;
+  public listData: Lead[];
+  constructor(private json: LeadsService) {
+    // JSON: LEADS
+    json.getData(this.leads).subscribe(result => {
+      console.log('List Mode : Leads Data', result);
+      this.listData === result;
+    });
+  }
 
   ngOnInit() {}
 }
@@ -40,75 +53,75 @@ export interface Lead {
   leadSalesRep: string;
 }
 
-const ELEMENT_DATA: Lead[] = [
-  {
-    leadPosition: 1, // ID
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 2,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 3,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 4,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 5,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 6,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 7,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 8,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 9,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  },
-  {
-    leadPosition: 10,
-    leadName: 'John Doe', // Name
-    leadEmail: 'john.doe@email.com', // Email
-    leadSource: 'Miami Conference', // Lead leadSource
-    leadSalesRep: `George Costanza` // Sales Rep
-  }
-];
+// const ELEMENT_DATA: Lead[] = [
+//   {
+//     leadPosition: 1, // ID
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 2,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 3,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 4,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 5,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 6,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 7,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 8,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 9,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   },
+//   {
+//     leadPosition: 10,
+//     leadName: 'John Doe', // Name
+//     leadEmail: 'john.doe@email.com', // Email
+//     leadSource: 'Miami Conference', // Lead leadSource
+//     leadSalesRep: `George Costanza` // Sales Rep
+//   }
+// ];
