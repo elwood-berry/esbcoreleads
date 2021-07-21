@@ -10,7 +10,7 @@
 1. Row hover, change cursor to 'click'
 1. Color seperation from rows to editable area. 
 1. Wire up services for data to populate the form and its children.  
-1. 
+1. Seperate interface from code
 
 #### Dialog 
 1. Click link to open dialog with edit form inside it.
