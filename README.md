@@ -1,3 +1,4 @@
-# esbcore-mptgxv
+# Lead Management
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/esbcore-mptgxv)
+## Task  
+The management of leads in a CRM platform.
