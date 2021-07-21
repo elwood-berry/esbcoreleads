@@ -6,6 +6,9 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 
 import { Component } from '@angular/core';
 
+// SERVICE
+import { LeadsService } from './services/leads/leads.service';
+
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',

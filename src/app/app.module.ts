@@ -18,6 +18,7 @@ import { StaticModeComponent } from './components/static-mode/static-mode.compon
 import { EditModeComponent } from './components/edit-mode/edit-mode.component';
 import { ListModeComponent } from './components/list-mode/list-mode.component';
 import { ListingsService } from './services/listings.service';
+import { LeadsService } from './services/leads.service';
 
 @NgModule({
   imports: [
@@ -34,7 +35,7 @@ import { ListingsService } from './services/listings.service';
     ListModeComponent
   ],
   bootstrap: [AppComponent],
-  providers: [ListingsService]
+  providers: [ListingsService, LeadsService]
 })
 export class AppModule {}
 
