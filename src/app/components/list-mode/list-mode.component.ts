@@ -16,6 +16,7 @@ import {
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
 
+//
 @Component({
   selector: 'app-list-mode',
   styleUrls: ['list-mode.component.css'],
@@ -31,10 +32,11 @@ import { Lead } from '../../interfaces/lead/lead';
     ])
   ]
 })
+
+//
 export class ListModeComponent {
   dataSource = ELEMENT_DATA;
   columnsToDisplay = [
-    'leadId',
     'firstName',
     'lastName',
     'title',
@@ -45,18 +47,6 @@ export class ListModeComponent {
     'email'
   ];
   expandedElement: Lead | null;
-}
-
-export interface Lead {
-  accountName: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  leadId: number;
-  phone: string;
-  referredBy: string;
-  status: string;
-  title: string;
 }
 
 const ELEMENT_DATA: Lead[] = [

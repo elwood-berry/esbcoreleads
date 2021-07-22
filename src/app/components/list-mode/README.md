@@ -10,12 +10,15 @@ Keep track of major shifts in the typescript file.
 /*
 DRAFT v.99 : 2021-07-22
 */
+
+// ANGULAR 
 import { Component } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-/*
-DECORATOR: Component
-*/
+// INTERFACE
+import { Lead } from '../../interfaces/lead/lead';
+
+// DECORATOR: Component
 @Component({
   selector: 'app-list-mode',
   styleUrls: ['list-mode.component.css'],
@@ -32,9 +35,7 @@ DECORATOR: Component
   ]
 })
 
-/*
-CLASS  
-*/
+// CLASS: LIST MODE   
 export class ListModeComponent {
   
   //PROPERTIES 
