@@ -26,12 +26,12 @@ export class StaticModeComponent implements OnInit {
   @Input() title: Lead;
   @Input() department: Lead;
   @Input() accountName: Lead;
-  @Input() sales_rep: Lead;
+  @Input() salesRep: Lead;
   @Input() email: Lead;
-  @Input() lead_source: Lead;
+  @Input() leadSource: Lead;
   @Input() phone: Lead;
   @Input() status: Lead;
-  @Input() coporate_identity: Lead;
+  @Input() coporateIdentity: Lead;
   @Input() description: Lead;
   @Input() referredBy: Lead;
 
