@@ -4,10 +4,13 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
 */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 import { EditModeComponent } from '../edit-mode/edit-mode.component';
+
+// INTERFACE
+import { Lead } from '../../interfaces/lead/lead';
 
 @Component({
   selector: 'app-static-mode',
@@ -15,6 +18,23 @@ import { EditModeComponent } from '../edit-mode/edit-mode.component';
   styleUrls: ['./static-mode.component.scss']
 })
 export class StaticModeComponent implements OnInit {
+  // INPUT Properties
+  @Input() zip: Lead;
+  @Input() leadId: Lead;
+  @Input() firstName: Lead;
+  @Input() lastName: Lead;
+  @Input() title: Lead;
+  @Input() department: Lead;
+  @Input() accountName: Lead;
+  @Input() sales_rep: Lead;
+  @Input() email: Lead;
+  @Input() lead_source: Lead;
+  @Input() phone: Lead;
+  @Input() status: Lead;
+  @Input() coporate_identity: Lead;
+  @Input() description: Lead;
+  @Input() referredBy: Lead;
+
   // CONTRUCTOR
   constructor(public dialog: MatDialog) {}
 
