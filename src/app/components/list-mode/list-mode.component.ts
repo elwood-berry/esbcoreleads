@@ -54,34 +54,13 @@ export class ListModeComponent implements OnInit {
 
   //
   constructor(private json: LeadsService) {
-    console.log('Constructor');
-
     // JSON: LISTINGS
     json.getData(this.leads).subscribe(result => {
       console.log('Leads Data', result);
-
-      // this.listingCount = result.length; // DEFINE THE LENGHT OF THE ARRAY
-      // this.jsonListings = result; // UPDATE PROPERTY
-      // console.log('JSON Listings', this.jsonListings);
+      this.dataSource = result;
     });
   } // [end] constructor
 
   //
   ngOnInit() {}
-}
-
-// const ELEMENT_DATA: Lead[] = [];
-
-// const ELEMENT_DATA: Lead[] = [
-//   {
-//     accountName: 'string',
-//     email: 'string',
-//     firstName: 'string',
-//     lastName: 'string',
-//     leadId: 0,
-//     phone: 'string',
-//     referredBy: 'string',
-//     status: 'string',
-//     title: 'string'
-//   }
-// ];
+} // [end] class ListModeComponent
