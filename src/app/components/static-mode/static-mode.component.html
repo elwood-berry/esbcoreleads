@@ -2,10 +2,7 @@
   <mat-card-header>
     <!-- <div mat-card-avatar class="example-header-image"></div> -->
     <mat-card-title>{{firstName}} {{lastName}}</mat-card-title>
-    <mat-card-subtitle
-      >Met John at the conference in Miami. He represents Acme, Inc. They are
-      interested in web stores as well as other products.</mat-card-subtitle
-    >
+    <mat-card-subtitle>{{description}}</mat-card-subtitle>
 
     <!-- BUTTON: EDIT THIS LEAD -->
     <mat-card-subtitle>
@@ -25,25 +22,25 @@
         <!-- TITLE -->
         <div class="static-mode-display" fxLayout="column">
           <small>Title</small>
-          Marketing Director
+          {{title}}
         </div>
 
         <!-- DEPARTMENT -->
         <div class="static-mode-display" fxLayout="column">
           <small>Department</small>
-          Marketing
+          {{department}}
         </div>
 
         <!-- ACCOUNT NAME -->
         <div class="static-mode-display" fxLayout="column">
           <small>Account Name</small>
-          Acme Inc.
+          {{accountName}}
         </div>
 
         <!-- SALES REP -->
         <div class="static-mode-display" fxLayout="column">
           <small>Sales Rep</small>
-          George Costanza
+          {{salesRep}}
         </div>
       </div>
       <mat-divider [vertical]="true" class="core-divider"></mat-divider>
@@ -53,31 +50,31 @@
         <!-- EMAIL -->
         <div class="static-mode-display" fxLayout="column">
           <small>Email</small>
-          john.doe@email.com
+          {{email}}
         </div>
 
         <!-- LEAD SOURCE-->
         <div class="static-mode-display" fxLayout="column">
           <small>Lead Source</small>
-          Miami Conference
+          {{leadSource}}
         </div>
 
         <!-- PHONE -->
         <div class="static-mode-display" fxLayout="column">
           <small>Phone</small>
-          (000) 000-0000
+          {{phone}}
         </div>
 
         <!-- STATUS -->
         <div class="static-mode-display" fxLayout="column">
           <small>Status</small>
-          Active
+          {{status}}
         </div>
 
         <!-- CORPORATE IDENTITY-->
         <div class="static-mode-display" fxLayout="column">
           <small>Corporate Identity</small>
-          Incorporated
+          {{coporateIdentity}}
         </div>
       </div>
       <mat-divider [vertical]="true" class="core-divider"></mat-divider>
