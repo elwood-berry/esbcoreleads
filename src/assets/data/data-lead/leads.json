@@ -1,6 +1,6 @@
 [{
 	"leadId": 0,
-	"first_name": "Daenerys",
+	"firstName": "Daenerys",
 	"last_name": "Targaryen",
 	"title": "Administrative Assistant",
 	"department": "Administration",
@@ -14,7 +14,7 @@
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }, {
 	"leadId": 1,
-	"first_name": "Tyrion",
+	"firstName": "Tyrion",
 	"last_name": "Lannister",
 	"title": "Executive Assistant",
 	"department": "Accounting and Finance",
@@ -28,7 +28,7 @@
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }, {
 	"leadId": 2,
-	"first_name": "Jon",
+	"firstName": "Jon",
 	"last_name": "Snow",
 	"title": "Marketing Manager",
 	"department": "Marketing and Advertising",
@@ -42,7 +42,7 @@
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }, {
 	"leadId": 3,
-	"first_name": "Cersei",
+	"firstName": "Cersei",
 	"last_name": "Lannister",
 	"title": "Customer Service Representative",
 	"department": "Production and Inventory",
@@ -56,7 +56,7 @@
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }, {
 	"leadId": 4,
-	"first_name": "Sansa",
+	"firstName": "Sansa",
 	"last_name": "Stark",
 	"title": "Nurse Practitioner",
 	"department": "Human Resources",
@@ -70,7 +70,7 @@
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }, {
 	"leadId": 5,
-	"first_name": "Arya",
+	"firstName": "Arya",
 	"last_name": "Stark",
 	"title": "Software Engineer",
 	"department": "Information Technology",
@@ -84,7 +84,7 @@
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }, {
 	"leadId": 6,
-	"first_name": "Jaime",
+	"firstName": "Jaime",
 	"last_name": "Lannister",
 	"title": "Sales Manager",
 	"department": "Human Resources",
@@ -99,7 +99,7 @@
 
 }, {
 	"leadId": 7,
-	"first_name": "Jorah",
+	"firstName": "Jorah",
 	"last_name": "Mormont",
 	"title": "Data Entry Clerk",
 	"department": "Sales",
@@ -113,7 +113,7 @@
 
 }, {
 	"leadId": 8,
-	"first_name": "Samwell",
+	"firstName": "Samwell",
 	"last_name": "Tarly",
 	"title": "Data Entry Clerk",
 	"department": "Marketing",
@@ -127,7 +127,7 @@
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }, {
 	"leadId": 9,
-	"first_name": "Theon",
+	"firstName": "Theon",
 	"last_name": "Greyjoy",
 	"title": "Sales Manager",
 	"department": "Customer Service",
