@@ -5,7 +5,7 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 */
 
 import { Component, OnInit, Input } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 import { EditModeComponent } from '../edit-mode/edit-mode.component';
 
@@ -52,8 +52,19 @@ export class StaticModeComponent implements OnInit {
   // ---
 
   // EDIT LEAD
-  public openDialog() {
-    const dialogRef = this.dialog.open(EditModeComponent);
+  public editLead() {
+    // 'openDialog'
+
+    const dialogConfig = new MatDialogConfig();
+    const dialogRef = this.dialog.open(EditModeComponent, dialogConfig);
+
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+
+    dialogConfig.data = {
+      id: 1,
+      title: 'Angular For Beginners'
+    };
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
