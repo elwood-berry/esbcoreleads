@@ -1,15 +1,21 @@
-/*
-APPLICATION NAME GOES HERE
-Author: 'me@elwoodberry.com'
-This code is brought to you by Elwood Berry @www.elwoodberry.com 
-*/
+# List Mode 
+I want to keep a log of major changes in the component files (css, html, ts, etc.).
 
+
+## TYPESCRIPT  
+Keep track of major shifts in the typescript file.
+
+### LOG: 2021-07-22  
+```ts  
+/*
+DRAFT v.99 : 2021-07-22
+*/
 import { Component } from '@angular/core';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 
-// INTERFACE  
-import { Lead } from '../../interfaces/lead/lead';
-
+/*
+DECORATOR: Component
+*/
 @Component({
   selector: 'app-list-mode',
   styleUrls: ['list-mode.component.css'],
@@ -25,9 +31,16 @@ import { Lead } from '../../interfaces/lead/lead';
     ])
   ]
 })
+
+/*
+CLASS  
+*/
 export class ListModeComponent {
-  dataSource = ELEMENT_DATA;
-  columnsToDisplay = [
+  
+  //PROPERTIES 
+
+  // Columbns To Display - This array dictates the order of the columns in the table.
+  public columnsToDisplay = [
     'leadId',
     'firstName',
     'lastName',
@@ -38,31 +51,5 @@ export class ListModeComponent {
     'phone',
     'email'
   ];
-  expandedElement: Lead | null;
-}
 
-export interface Lead {
-  accountName: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  leadId: number;
-  phone: string;
-  referredBy: string;
-  status: string;
-  title: string;
-}
-
-const ELEMENT_DATA: Lead[] = [
-  {
-    accountName: "string",
-    email: "string",
-    firstName: "string",
-    lastName: "string",
-    leadId: 0,
-    phone: "string",
-    referredBy: "string",
-    status: "string",
-    title: "string"
-  }
-];
+```
