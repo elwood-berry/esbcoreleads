@@ -18,10 +18,11 @@ export class EditModeComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) data
   ) {
     this.description = data.description;
+    console.log('Edit Mode Constructor...');
   }
 
   ngOnInit() {
-    //this.form = fb.group({description: [description, []]});
+    // this.form = fb.group({description: [description, []]});
   }
 
   save() {

@@ -8,7 +8,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // ASSETS
 import { MaterialLibraryModule } from '../assets/libs/material/material-library/material-library.module';
@@ -29,6 +29,7 @@ import { LeadsService } from './services/leads/leads.service';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialLibraryModule,
     FlexLayoutModule
   ],

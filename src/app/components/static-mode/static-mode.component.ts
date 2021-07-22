@@ -53,10 +53,10 @@ export class StaticModeComponent implements OnInit {
 
   // EDIT LEAD
   public editLead() {
-    // 'openDialog'
+    console.log('Edit Lead Has Been Clicked.');
 
     const dialogConfig = new MatDialogConfig();
-    const dialogRef = this.dialog.open(EditModeComponent, dialogConfig);
+    // const dialogRef = this.dialog.open(EditModeComponent, dialogConfig);
 
     dialogConfig.disableClose = true;
     dialogConfig.autoFocus = true;
@@ -66,8 +66,10 @@ export class StaticModeComponent implements OnInit {
       title: 'Angular For Beginners'
     };
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
+    this.dialog.open(EditModeComponent, dialogConfig);
+
+    // dialogRef.afterClosed().subscribe(result => {
+    //   console.log(`Dialog result: ${result}`);
+    // });
   }
 }
