@@ -21,7 +21,7 @@ import { Lead } from '../../interfaces/lead/lead';
 // SERVICE
 import { LeadsService } from '../../services/leads/leads.service';
 
-// COMPONENT 
+// COMPONENT
 @Component({
   selector: 'app-list-mode',
   styleUrls: ['list-mode.component.css'],
@@ -38,14 +38,11 @@ import { LeadsService } from '../../services/leads/leads.service';
   ]
 })
 
-// CLASS: LIST MODE   
-export class ListModeComponent {
-  
-  //PROPERTIES 
-
-  // Columbns To Display - This array dictates the order of the columns in the table.
+//
+export class ListModeComponent implements OnInit {
+  public leads: string = 'assets/data/data-lead/leads.json';
+  public dataSource: Lead[] = [];
   public columnsToDisplay = [
-    'leadId',
     'firstName',
     'lastName',
     'title',
@@ -55,5 +52,19 @@ export class ListModeComponent {
     'phone',
     'email'
   ];
+  expandedElement: Lead | null;
+
+  //
+  constructor(private json: LeadsService) {
+    // JSON: LISTINGS
+    json.getData(this.leads).subscribe(result => {
+      console.log('Leads Data', result);
+      this.dataSource = result;
+    });
+  } // [end] constructor
+
+  //
+  ngOnInit() {}
+} // [end] class ListModeComponent
 
 ```
