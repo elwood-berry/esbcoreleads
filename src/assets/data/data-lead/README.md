@@ -4,7 +4,7 @@ JSON file for sample data for leads form.
 ## .01 FIRST NAME  **   
 **Type**: String    
 **Required**: True  
-**Description**: The user's first name.
+**Description**: The user"s first name.
 ```JSON 
 [
   {
@@ -15,7 +15,7 @@ JSON file for sample data for leads form.
 ## .02 LAST NAME **  
 **Type**: String
 **Required**: True  
-**Description**: The user's last name.
+**Description**: The user"s last name.
 ```JSON 
 [
   {
@@ -26,7 +26,7 @@ JSON file for sample data for leads form.
 ## .03 TITLE 
 **Type**: String
 **Required**: False  
-**Description**: The user's work title.
+**Description**: The user"s work title.
 ```JSON 
 [
   {
@@ -70,7 +70,7 @@ JSON file for sample data for leads form.
 ## .07 EMAIL **  
 **Type**: String  
 **Required**: True  
-**Description**: The user's email address.
+**Description**: The user"s email address.
 ```JSON 
 [
   {
@@ -81,7 +81,7 @@ JSON file for sample data for leads form.
 ## .08 LEAD SOURCE    
 **Type**: String[]  
 **Required**: True  
-**Description**: The user's email address.
+**Description**: The user"s email address.
 ```JSON 
 [
   "lead_source": [
@@ -105,7 +105,7 @@ JSON file for sample data for leads form.
 ## .09 PHONE  
 **Type**: String  
 **Required**: False  
-**Description**: The user's primary phone.
+**Description**: The user"s primary phone.
 ```JSON 
 [
   "phone": [
@@ -123,7 +123,7 @@ JSON file for sample data for leads form.
 ## .10 STATUS  
 **Type**: String  
 **Required**: False  
-**Description**: The user's status as a lead.
+**Description**: The user"s status as a lead.
 ```JSON 
 [
   "status": [
@@ -136,7 +136,7 @@ JSON file for sample data for leads form.
 ## .11 CORPORATE IDENTITY    
 **Type**: String  
 **Required**: False  
-**Description**: The user's coporate identity.
+**Description**: The user"s coporate identity.
 ```JSON 
 [
   "coporate_identity": [
@@ -219,7 +219,7 @@ JSON file for sample data for leads form.
       "state": [
         "abrreviatoon": "",
         "nick": "",
-        full_name: 802,
+        full_"name": 802,
         contry,
         post coporate_identity
       ]
@@ -333,7 +333,7 @@ JSON file for sample data for leads form.
 	"last_name": "Lannister",
 	"title": "Customer Service Representative",
 	"department": "Production and Inventory",
-	"account_name": "Petyr 'Littlefinger' Baelish",
+	"account_name": "Petyr "Littlefinger" Baelish",
 	"sales_rep": "Tywin Lannister",
 	"email": "tywin.lannister@domainname.com",
 	"lead_source": "Cold Call",
@@ -428,3 +428,70 @@ JSON file for sample data for leads form.
 	"description": "Lorem ipsum dolor amet, adipiscing elit. Praesent vitae posuere ligula."
 }]
 ```
+
+
+```JSON 
+[
+  {
+    "position": 1,
+    "name": "Hydrogen",
+    "weight": 1.0079,
+    "symbol": "H",
+    "description": "Description goes here"
+  }, {
+    "position": 2,
+    "name": "Helium",
+    "weight": 4.0026,
+    "symbol": "He",
+    "description": "Description goes here"
+  }, {
+    "position": 3,
+    "name": "Lithium",
+    "weight": 6.941,
+    "symbol": "Li",
+    "description": "Description goes here"
+  }, {
+    "position": 4,
+    "name": "Beryllium",
+    "weight": 9.0122,
+    "symbol": "Be",
+    "description": "Description goes here"
+  }, {
+    "position": 5,
+    "name": "Boron",
+    "weight": 10.811,
+    "symbol": "B",
+    "description": "Description goes here"
+  }, {
+    "position": 6,
+    "name": "Carbon",
+    "weight": 12.0107,
+    "symbol": "C",
+    "description": "Description goes here"
+  }, {
+    "position": 7,
+    "name": "Nitrogen",
+    "weight": 14.0067,
+    "symbol": "N",
+    "description": "Description goes here"
+  }, {
+    "position": 8,
+    "name": "Oxygen",
+    "weight": 15.9994,
+    "symbol": "O",
+    "description": "Description goes here"
+  }, {
+    "position": 9,
+    "name": "Fluorine",
+    "weight": 18.9984,
+    "symbol": "F",
+    "description": "Description goes here"
+  }, {
+    "position": 10,
+    "name": "Neon",
+    "weight": 20.1797,
+    "symbol": "Ne",
+    "description": "Description goes here"
+  }
+]
+``` 
