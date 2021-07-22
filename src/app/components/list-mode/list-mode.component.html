@@ -24,7 +24,7 @@
         class="example-element-detail"
         [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'"
       >
-        <app-static-mode></app-static-mode>
+        <app-static-mode [firstName]="element.firstName"></app-static-mode>
       </div>
     </td>
   </ng-container>
