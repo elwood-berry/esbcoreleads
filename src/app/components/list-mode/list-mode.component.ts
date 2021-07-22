@@ -39,7 +39,7 @@ import { LeadsService } from '../../services/leads/leads.service';
 //
 export class ListModeComponent implements OnInit {
   public leads: string = 'assets/data/data-lead/leads.json';
-  dataSource = ELEMENT_DATA;
+  public dataSource: Lead[] = [];
   public columnsToDisplay = [
     'firstName',
     'lastName',
@@ -55,22 +55,33 @@ export class ListModeComponent implements OnInit {
   //
   constructor(private json: LeadsService) {
     console.log('Constructor');
-  }
+
+    // JSON: LISTINGS
+    json.getData(this.leads).subscribe(result => {
+      console.log('Leads Data', result);
+
+      // this.listingCount = result.length; // DEFINE THE LENGHT OF THE ARRAY
+      // this.jsonListings = result; // UPDATE PROPERTY
+      // console.log('JSON Listings', this.jsonListings);
+    });
+  } // [end] constructor
 
   //
   ngOnInit() {}
 }
 
-const ELEMENT_DATA: Lead[] = [
-  {
-    accountName: 'string',
-    email: 'string',
-    firstName: 'string',
-    lastName: 'string',
-    leadId: 0,
-    phone: 'string',
-    referredBy: 'string',
-    status: 'string',
-    title: 'string'
-  }
-];
+// const ELEMENT_DATA: Lead[] = [];
+
+// const ELEMENT_DATA: Lead[] = [
+//   {
+//     accountName: 'string',
+//     email: 'string',
+//     firstName: 'string',
+//     lastName: 'string',
+//     leadId: 0,
+//     phone: 'string',
+//     referredBy: 'string',
+//     status: 'string',
+//     title: 'string'
+//   }
+// ];
