@@ -21,7 +21,7 @@ import { Lead } from '../../interfaces/lead/lead';
 // SERVICE
 import { LeadsService } from '../../services/leads/leads.service';
 
-// DECORATOR: Component
+// COMPONENT 
 @Component({
   selector: 'app-list-mode',
   styleUrls: ['list-mode.component.css'],

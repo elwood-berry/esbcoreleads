@@ -4,7 +4,7 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
 */
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   animate,
   state,
@@ -19,7 +19,7 @@ import { Lead } from '../../interfaces/lead/lead';
 // SERVICE
 import { LeadsService } from '../../services/leads/leads.service';
 
-//
+// COMPONENT
 @Component({
   selector: 'app-list-mode',
   styleUrls: ['list-mode.component.css'],
@@ -37,7 +37,7 @@ import { LeadsService } from '../../services/leads/leads.service';
 })
 
 //
-export class ListModeComponent {
+export class ListModeComponent implements OnInit {
   public leads: string = 'assets/data/data-lead/leads.json';
   dataSource = ELEMENT_DATA;
   public columnsToDisplay = [
@@ -51,6 +51,14 @@ export class ListModeComponent {
     'email'
   ];
   expandedElement: Lead | null;
+
+  //
+  constructor(private json: LeadsService) {
+    console.log('Constructor');
+  }
+
+  //
+  ngOnInit() {}
 }
 
 const ELEMENT_DATA: Lead[] = [
