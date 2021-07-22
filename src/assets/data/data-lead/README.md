@@ -429,7 +429,8 @@ JSON file for sample data for leads form.
 }]
 ```
 
-
+# ORIGINAL JSON  
+[Table with expandable rows](https://material.angular.io/components/table/examples#table-expandable-rows) 
 ```JSON 
 [
   {
@@ -495,3 +496,63 @@ JSON file for sample data for leads form.
   }
 ]
 ``` 
+
+---  
+
+# 2021.07.22 - 
+Updated version.
+
+### Columns  
+Display these columns by default.
+```ts  
+
+// PROPERTIES.
+public columnsToDisplay = [
+	'accountName',
+	'email',
+	'firstName',
+	'lastName',
+	'leadId',
+	'phone',
+	'referredBy',
+	'status',
+	'title'
+];
+
+```  
+
+### Interface  
+```ts 
+export interface Lead {
+  accountName: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  leadId: number;
+  phone: string;
+  referredBy: string;
+  status: string;
+  title: string;
+}
+```
+### JSON 
+```ts
+
+const ELEMENT_DATA: Lead[] = [
+  {
+    accountName: "string",
+    email: "string",
+    firstName: "string",
+    lastName: "string",
+    leadId: 0,
+    phone: "string",
+    referredBy: "string",
+    status: "string",
+    title: "string"
+  }
+];
+
+```
+
+[end: 2021.07.22](#)
+--- 
