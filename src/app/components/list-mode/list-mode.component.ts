@@ -16,6 +16,9 @@ import {
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
 
+// SERVICE
+import { LeadsService } from '../../services/leads/leads.service';
+
 //
 @Component({
   selector: 'app-list-mode',
@@ -35,8 +38,9 @@ import { Lead } from '../../interfaces/lead/lead';
 
 //
 export class ListModeComponent {
+  public leads: string = 'assets/data/data-lead/leads.json';
   dataSource = ELEMENT_DATA;
-  columnsToDisplay = [
+  public columnsToDisplay = [
     'firstName',
     'lastName',
     'title',

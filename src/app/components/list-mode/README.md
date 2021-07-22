@@ -18,6 +18,9 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
 
+// SERVICE
+import { LeadsService } from '../../services/leads/leads.service';
+
 // DECORATOR: Component
 @Component({
   selector: 'app-list-mode',
