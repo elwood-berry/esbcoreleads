@@ -1,40 +1,41 @@
 <mat-card class="core-card">
   <mat-card-header>
-    <!-- <div mat-card-avatar class="example-header-image"></div> -->
     <mat-card-title>Edit Lead</mat-card-title>
-    <mat-card-subtitle>The instructions for editing an existing lead goes here.</mat-card-subtitle>
+    <mat-card-subtitle
+      >The instructions for editing an existing lead goes
+      here.</mat-card-subtitle
+    >
   </mat-card-header>
 
-  <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
   <mat-card-content fxLayout="column">
     <!-- FIRST NAME -->
     <mat-form-field appearance="fill">
       <mat-label>First Name</mat-label>
-      <input matInput />
+      <input matInput [value]="firstName" />
     </mat-form-field>
 
     <!-- LAST NAME -->
     <mat-form-field appearance="fill">
       <mat-label>Last Name</mat-label>
-      <input matInput />
+      <input matInput [value]="lastName" />
     </mat-form-field>
 
     <!-- EMAIL -->
     <mat-form-field appearance="fill">
       <mat-label>Email</mat-label>
-      <input matInput />
+      <input matInput [value]="email" />
     </mat-form-field>
 
     <!-- SALES REP -->
     <mat-form-field appearance="fill">
       <mat-label>Sales Rep</mat-label>
-      <input matInput />
+      <input matInput [value]="salesRep" />
     </mat-form-field>
 
     <!-- LEAD SOURCE -->
     <mat-form-field appearance="fill">
       <mat-label>Lead Source</mat-label>
-      <input matInput />
+      <input matInput [value]="leadSource" />
     </mat-form-field>
 
     <mat-expansion-panel hideToggle>
