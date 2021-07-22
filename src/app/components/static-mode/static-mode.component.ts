@@ -62,10 +62,32 @@ export class StaticModeComponent implements OnInit {
     dialogConfig.autoFocus = true;
 
     dialogConfig.data = {
-      id: 1,
-      title: 'Angular For Beginners'
+      firstName: this.firstName,
+      lastName: this.lastName,
+      title: this.title,
+      department: this.department,
+      accountName: this.accountName,
+      salesRep: this.salesRep,
+      email: this.email,
+      leadSource: this.leadSource,
+      phone: this.phone,
+      status: this.status,
+      coporateIdentity: this.coporateIdentity,
+      description: this.description,
+      referredBy: this.referredBy,
+      billingAddress1: this.billingAddress1,
+      billingAddress2: this.billingAddress2,
+      billingCity: this.billingCity,
+      billingState: this.billingState,
+      billingZip: this.billingZip,
+      shippingAddress1: this.shippingAddress1,
+      shippingAddress2: this.shippingAddress2,
+      shippingCity: this.shippingCity,
+      shippingState: this.shippingState,
+      shippingZip: this.shippingZip
     };
 
+    console.log('Shipping Zip', this.shippingZip);
     this.dialog.open(EditModeComponent, dialogConfig);
 
     // dialogRef.afterClosed().subscribe(result => {
