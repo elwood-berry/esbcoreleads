@@ -12,7 +12,17 @@
 	"status": "new",
 	"coporateIdentity": "incorporatated",
 	"description": "Also known as Daenerys Stormborn, and colloquially known as Dany, was the younger sister of Rhaegar Targaryen and Viserys Targaryen",
-	"referredBy": "Gendry"
+	"referredBy": "Gendry",
+	"billingAddress1": "2285 Trout St, Juneau, AK 99801",
+	"billingAddress2": "",
+	"billingCity": "Juneau",
+	"billingState": "AK",
+	"billingZip": "99801",
+	"shippingAddress1": "2285 Trout St, Juneau, AK 99801",
+	"shippingAddress2": "",
+	"shippingCity": "Juneau",
+	"shippingState": "AK",
+	"shippingZip": "99801"
 }, {
 	"leadId": 1,
 	"firstName": "Tyrion",

@@ -34,7 +34,16 @@ export class StaticModeComponent implements OnInit {
   @Input() coporateIdentity: Lead;
   @Input() description: Lead;
   @Input() referredBy: Lead;
-
+  @Input() billingAddress1: Lead;
+  @Input() billingAddress2: Lead;
+  @Input() billingCity: Lead;
+  @Input() billingState: Lead;
+  @Input() billingZip: Lead;
+  @Input() shippingAddress1: Lead;
+  @Input() shippingAddress2: Lead;
+  @Input() shippingCity: Lead;
+  @Input() shippingState: Lead;
+  @Input() shippingZip: Lead;
   // CONTRUCTOR
   constructor(public dialog: MatDialog) {}
 
