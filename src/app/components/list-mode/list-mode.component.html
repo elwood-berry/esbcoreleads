@@ -24,7 +24,23 @@
         class="example-element-detail"
         [@detailExpand]="element == expandedElement ? 'expanded' : 'collapsed'"
       >
-        <app-static-mode [firstName]="element.firstName"></app-static-mode>
+        <!-- -->
+        <app-static-mode
+          [firstName]="element.firstName"
+          [lastName]="element.lastName"
+          [title]="element.title"
+          [department]="element.department"
+          [accountName]="element.accountName"
+          [salesRep]="element.salesRep"
+          [email]="element.email"
+          [leadSource]="element.leadSource"
+          [phone]="element.phone"
+          [status]="element.status"
+          [coporateIdentity]="element.coporateIdentity"
+          [description]="element.description"
+          [referredBy]="element.referredBy"
+        ></app-static-mode>
+        <!-- [end] -->
       </div>
     </td>
   </ng-container>
