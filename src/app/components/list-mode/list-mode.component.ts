@@ -5,9 +5,15 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 */
 
 import { Component } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import {
+  animate,
+  state,
+  style,
+  transition,
+  trigger
+} from '@angular/animations';
 
-// INTERFACE  
+// INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
 
 @Component({
@@ -55,14 +61,14 @@ export interface Lead {
 
 const ELEMENT_DATA: Lead[] = [
   {
-    accountName: "string",
-    email: "string",
-    firstName: "string",
-    lastName: "string",
+    accountName: 'string',
+    email: 'string',
+    firstName: 'string',
+    lastName: 'string',
     leadId: 0,
-    phone: "string",
-    referredBy: "string",
-    status: "string",
-    title: "string"
+    phone: 'string',
+    referredBy: 'string',
+    status: 'string',
+    title: 'string'
   }
 ];
