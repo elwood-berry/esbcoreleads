@@ -22,6 +22,7 @@ import { ListModeComponent } from './components/list-mode/list-mode.component';
 
 // SERVICES
 import { LeadsService } from './services/leads/leads.service';
+import { LeadActivityComponent } from './components/lead-activity/lead-activity.component';
 
 @NgModule({
   imports: [
@@ -37,7 +38,8 @@ import { LeadsService } from './services/leads/leads.service';
     AppComponent,
     StaticModeComponent,
     EditModeComponent,
-    ListModeComponent
+    ListModeComponent,
+    LeadActivityComponent
   ],
   bootstrap: [AppComponent],
   providers: [LeadsService]
