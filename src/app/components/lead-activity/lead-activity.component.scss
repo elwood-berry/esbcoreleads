@@ -1,16 +1,8 @@
 :host {
   // background-color: hsla(155, 100%, 50%, 0.1);
-  width: 100%;
   font-size: 12px;
   font-weight: 100;
-
-  //
-  .mat-list {
-    background-color: hsla(0, 100%, 50%, 0.1);
-
-    .mat-list-item {
-      background-color: hsla(308, 100%, 50%, 0.1);
-      height: inherit !important;
-    }
-  }
+  padding-bottom: 8px;
+  padding-top: 8px;
+  width: 100%;
 }

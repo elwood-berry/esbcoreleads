@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+// INTERFACE
+import { Lead } from '../../interfaces/lead/lead';
 
 @Component({
   selector: 'app-lead-activity',
@@ -6,6 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./lead-activity.component.scss']
 })
 export class LeadActivityComponent implements OnInit {
+  // @Input() PROPERTIES.
+  @Input() activityDate: Lead;
+  @Input() activityTime: Lead;
+  @Input() activityTitle: Lead;
+  @Input() activityOutcome: Lead;
+  @Input() activityType: Lead;
+
+  // CONSTRUCTOR
   constructor() {}
 
   ngOnInit() {}
