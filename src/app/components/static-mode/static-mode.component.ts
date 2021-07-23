@@ -11,6 +11,7 @@ import { EditModeComponent } from '../edit-mode/edit-mode.component';
 
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
+import { $EQ } from '@angular/compiler/src/chars';
 
 @Component({
   selector: 'app-static-mode',
@@ -44,8 +45,16 @@ export class StaticModeComponent implements OnInit {
   @Input() shippingCity: Lead;
   @Input() shippingState: Lead;
   @Input() shippingZip: Lead;
+  @Input() activities: any[];
+  @Input() activityDate: Lead;
+  @Input() activityTime: Lead;
+  @Input() activityTitle: Lead;
+  @Input() activityOutcome: Lead;
+  @Input() activityType: Lead;
   // CONTRUCTOR
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog) {
+    console.log('Activities', this.activities);
+  }
 
   ngOnInit() {}
 

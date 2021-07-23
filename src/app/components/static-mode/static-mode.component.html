@@ -104,18 +104,13 @@
 
     <div class="activity-log">
       <mat-list role="list">
-        <mat-list-item role="listitem">
-          <app-lead-activity></app-lead-activity>
+
+        <mat-list-item role="listitem" *ngFor="let activity of activities;  let i = index">
+          <app-lead-activity [activityDate]="activities[i].activityDate" [activityTime]="activities[i].activityTime"
+            [activityTitle]="activities[i].activityTitle" [activityOutcome]="activities[i].activityOutcome"
+            [activityType]="activities[i].activityType"></app-lead-activity>
         </mat-list-item>
-        <mat-list-item role="listitem">
-          <app-lead-activity></app-lead-activity>
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <app-lead-activity></app-lead-activity>
-        </mat-list-item>
-        <mat-list-item role="listitem">
-          <app-lead-activity></app-lead-activity>
-        </mat-list-item>
+
       </mat-list>
     </div>
     <!-- [end] 'activity-log' -->

@@ -1,14 +1,12 @@
 <div class="lead-activity-container" fxLayout="column">
 
-  <div class="lead-activity-type">[type] "Call"</div>
-  <div class="lead-activity-type">[title] "Morning Call About Fulfillment"</div>
+  <div class="lead-activity-type">{{activityType}}</div>
+  <div class="lead-activity-type">{{activityTitle}}</div>
   <mat-divider></mat-divider>
   <div fxLayout="row">
-    <div>[date] "Monday, May 5th, 2021</div>
-    <div>[time] "1PM CST"</div>
+    <div>{{activityDate}}</div>
+    <div>{{activityTime}}</div>
   </div>
 
-  <div>
-    [outcome] "Great call. Follow up this Friday about onboarding and deposits.
-  </div>
+  <div>{{activityOutcome}}</div>
 </div>
