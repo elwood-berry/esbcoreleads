@@ -19,6 +19,17 @@ $corePrimary: #003261;
       ::ng-deep .mat-card-header-text {
         // background-color: rgba(255, 94, 0, 0.1);
         margin: 0;
+
+        .mat-card-title {
+          .mat-badge {
+            .mat-badge-content {
+              border-radius: 3px;
+              right: -75px;
+              top: 0px;
+              width: 60px;
+            }
+          }
+        }
       }
     }
 
@@ -57,18 +68,6 @@ $corePrimary: #003261;
 }
 
 // ---
-/*
-STATIC MODE
-*/
-.static-mode-display {
-  background-color: transparent;
-  padding: 5px 0;
-
-  small {
-    color: rgb(110, 110, 110);
-    font-weight: 100;
-  }
-}
 
 // ---
 .activity-log {

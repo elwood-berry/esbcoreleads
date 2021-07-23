@@ -1,7 +1,7 @@
 <mat-card class="core-card">
   <mat-card-header>
     <!-- <div mat-card-avatar class="example-header-image"></div> -->
-    <mat-card-title>{{firstName}} {{lastName}}</mat-card-title>
+    <mat-card-title><span [matBadge]="status" matBadgeOverlap="false">{{firstName}} {{lastName}}</span></mat-card-title>
     <mat-card-subtitle>{{description}}</mat-card-subtitle>
 
     <!-- BUTTON: EDIT THIS LEAD -->
@@ -12,35 +12,35 @@
     </mat-card-subtitle>
   </mat-card-header>
 
-  <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
-
   <mat-card-content>
 
     <!-- ROW: STATIC DATA -->
     <div class="core-row" fxLayout="row">
 
-      <!-- COLUMN #1 -->
+      <!-- COLUMN #1: LEFT -->
       <div class="core-column" fxLayout="column" fxFlex="25%">
 
-        {{title}}
         <!-- CMPNNT: LEAD INFO -->
-        <app-lead-info [title]="title" [department]="" [accountName]="" [salesRep]="" [email]="" [leadSource]=""
-          [phone]="" [status]="" [coporateIdentity]="" [billingAddress1]="" [billingAddress2]="" [billingCity]=""
-          [billingState]="" [billingZip]="" [shippingAddress1]="" [shippingAddress2]="" [shippingCity]=""
-          [shippingState]="" [shippingZip]=""></app-lead-info>
+        <app-lead-info [title]="title" [department]="department" [accountName]="accountName" [salesRep]="salesRep"
+          [email]="email" [leadSource]="leadSource" [phone]="phone" [status]="status"
+          [coporateIdentity]="coporateIdentity" [billingAddress1]="billingAddress1" [billingAddress2]="billingAddress2"
+          [billingCity]="billingCity" [billingState]="billingState" [billingZip]="billingZip"
+          [shippingAddress1]="shippingAddress1" [shippingAddress2]="shippingAddress2" [shippingCity]="shippingCity"
+          [shippingState]="shippingState" [shippingZip]="shippingZip"></app-lead-info>
 
       </div>
 
       <mat-divider [vertical]="true" class="core-divider"></mat-divider>
 
-      <!-- COLUMN #2 -->
-      <!-- <div class="core-column" fxLayout="column" fxFlex="25%"></div>
-
-      <mat-divider [vertical]="true" class="core-divider"></mat-divider> -->
-
-      <!-- COLUMN #3 -->
+      <!-- COLUMN #2: RIGHT -->
       <div class="core-column" fxLayout="column" fxFlex="75%">
+
         <div class="activity-log">
+          <header>
+            <h3>Activities</h3>
+            <a href="">Add Activity</a>
+          </header>
+
           <mat-list role="list">
 
             <mat-list-item role="listitem" *ngFor="let activity of activities;  let i = index">
@@ -57,16 +57,16 @@
     </div>
     <!-- [end] ROW: STATIC DATA -->
 
-    <mat-divider></mat-divider>
+    <!-- <mat-divider></mat-divider> -->
 
 
 
     <!-- NOTES-->
-    <div class="static-mode-display" fxLayout="column">
+    <!-- <div class="static-mode-display" fxLayout="column">
       <small>Notes</small>
       John likes websites like Nike, Adidas and Reebok. He also likes red
       corvettes and brisket.
-    </div>
+    </div> -->
   </mat-card-content>
 
   <mat-card-actions>

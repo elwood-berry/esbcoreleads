@@ -1,75 +1,81 @@
-<p>
-  lead-info works!
-</p>
-
-
 <!-- TITLE -->
-<div class="static-mode-display" fxLayout="column">
+<div class="static-mode-display" fxLayout="column" *ngIf="title">
   <small>Title</small>
   {{title}}
 </div>
 
 <!-- DEPARTMENT -->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Department</small>
-{{department}}
-</div> -->
+<div class="static-mode-display" fxLayout="column" *ngIf="department">
+  <small>Department</small>
+  {{department}}
+</div>
 
 <!-- ACCOUNT NAME -->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Account Name</small>
-{{accountName}}
-</div> -->
+<div class="static-mode-display" fxLayout="column" *ngIf="accountName">
+  <small>Account Name</small>
+  {{accountName}}
+</div>
 
 <!-- SALES REP -->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Sales Rep</small>
-{{salesRep}}
+<div class="static-mode-display" fxLayout="column" *ngIf="salesRep">
+  <small>Sales Rep</small>
+  {{salesRep}}
 </div>
-</div> -->
 
 <!-- EMAIL -->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Email</small>
-{{email}}
-</div> -->
+<div class="static-mode-display" fxLayout="column" *ngIf="email">
+  <small>Email</small>
+  {{email}}
+</div>
 
 <!-- LEAD SOURCE-->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Lead Source</small>
-{{leadSource}}
-</div> -->
+<div class="static-mode-display" fxLayout="column" *ngIf="leadSource">
+  <small>Lead Source</small>
+  {{leadSource}}
+</div>
 
 <!-- PHONE -->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Phone</small>
-{{phone}}
-</div> -->
+<div class="static-mode-display" fxLayout="column" *ngIf="phone">
+  <small>Phone</small>
+  {{phone}}
+</div>
 
 <!-- STATUS -->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Status</small>
-{{status}}
-</div> -->
+<div class="static-mode-display" fxLayout="column" *ngIf="status">
+  <small>Status</small>
+  {{status}}
+</div>
 
 <!-- CORPORATE IDENTITY-->
-<!-- <div class="static-mode-display" fxLayout="column">
-<small>Corporate Identity</small>
-{{coporateIdentity}}
-</div> -->
+<div class="static-mode-display" fxLayout="column" *ngIf="coporateIdentity">
+  <small>Corporate Identity</small>
+  {{coporateIdentity}}
+</div>
 
 <!-- BILLING ADDRESS -->
-<!-- <div class="static-mode-display" fxLayout="column">
+<div class="static-mode-display" fxLayout="column">
   <small>Billing</small>
-  {{billingAddress1}}<br />
-  {{billingAddress2}}<br />
-  {{billingCity}}, {{billingState}} {{billingZip}}
-</div> -->
+  <div fxLayout="column">
+    <span *ngIf="billingAddress1">{{billingAddress1}}</span>
+    <span *ngIf="billingAddress2">{{billingAddress2}}</span>
+  </div>
+  <div fxLayout="row">
+    <span *ngIf="billingCity">{{billingCity}}, </span>
+    <span *ngIf="billingState">{{billingState}}</span>
+    <span *ngIf="billingZip">{{billingZip}}</span>
+  </div>
+</div>
 
 <!-- BILLING ADDRESS -->
-<!-- <div class="static-mode-display" fxLayout="column">
+<div class="static-mode-display" fxLayout="column">
   <small>Shipping</small>
-  {{shippingAddress1}}<br />
-  {{shippingAddress2}}<br />
-  {{shippingCity}}, {{shippingState}} {{shippingZip}}
-</div> -->
+  <div fxLayout="column">
+    <span *ngIf="shippingAddress1">{{shippingAddress1}}</span>
+    <span *ngIf="shippingAddress2">{{shippingAddress2}}</span>
+  </div>
+  <div fxLayout="row">
+    <span *ngIf="shippingCity">{{shippingCity}}, </span>
+    <span *ngIf="shippingState">{{shippingState}}</span>
+    <span *ngIf="shippingZip">{{shippingZip}}</span>
+  </div>
+</div>

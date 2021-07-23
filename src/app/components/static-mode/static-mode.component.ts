@@ -19,6 +19,9 @@ import { Lead } from '../../interfaces/lead/lead';
   styleUrls: ['./static-mode.component.scss']
 })
 export class StaticModeComponent implements OnInit {
+  // INPUT PROPERTIES: MATERIAL COMPONENTS
+  @Input('matBadge') content: string;
+
   // INPUT Properties
   @Input() zip: Lead;
   @Input() leadId: Lead;
@@ -31,7 +34,7 @@ export class StaticModeComponent implements OnInit {
   @Input() email: Lead; // Lead Info
   @Input() leadSource: Lead; // Lead Info
   @Input() phone: Lead; // Lead Info
-  @Input() status: Lead; // Lead Info
+  @Input() status; // status: Lead; Lead Info
   @Input() coporateIdentity: Lead; // Lead Info
   @Input() description: Lead;
   @Input() referredBy: Lead;
