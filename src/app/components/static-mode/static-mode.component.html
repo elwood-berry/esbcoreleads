@@ -21,10 +21,13 @@
 
       <!-- COLUMN #1 -->
       <div class="core-column" fxLayout="column" fxFlex="25%">
-        <app-lead-info [title]="" [department]="" [accountName]="" [salesRep]="" [email]="" [leadSource]="" [phone]=""
-          [status]="" [coporateIdentity]="" [billingAddress1]="" [billingAddress2]="" [billingCity]="" [billingState]=""
-          [billingZip]="" [shippingAddress1]="" [shippingAddress2]="" [shippingCity]="" [shippingState]=""
-          [shippingZip]=""></app-lead-info>
+
+        {{title}}
+        <!-- CMPNNT: LEAD INFO -->
+        <app-lead-info [title]="title" [department]="" [accountName]="" [salesRep]="" [email]="" [leadSource]=""
+          [phone]="" [status]="" [coporateIdentity]="" [billingAddress1]="" [billingAddress2]="" [billingCity]=""
+          [billingState]="" [billingZip]="" [shippingAddress1]="" [shippingAddress2]="" [shippingCity]=""
+          [shippingState]="" [shippingZip]=""></app-lead-info>
 
       </div>
 

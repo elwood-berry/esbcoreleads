@@ -11,7 +11,7 @@ import { EditModeComponent } from '../edit-mode/edit-mode.component';
 
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
-import { $EQ } from '@angular/compiler/src/chars';
+// import { $EQ } from '@angular/compiler/src/chars';
 
 @Component({
   selector: 'app-static-mode',
@@ -24,27 +24,27 @@ export class StaticModeComponent implements OnInit {
   @Input() leadId: Lead;
   @Input() firstName: Lead;
   @Input() lastName: Lead;
-  @Input() title: Lead; // Lead Info 
-  @Input() department: Lead; // Lead Info 
-  @Input() accountName: Lead; // Lead Info 
-  @Input() salesRep: Lead; // Lead Info 
-  @Input() email: Lead; // Lead Info 
-  @Input() leadSource: Lead; // Lead Info 
-  @Input() phone: Lead; // Lead Info 
-  @Input() status: Lead; // Lead Info 
-  @Input() coporateIdentity: Lead; // Lead Info 
+  @Input() title: Lead; // Lead Info
+  @Input() department: Lead; // Lead Info
+  @Input() accountName: Lead; // Lead Info
+  @Input() salesRep: Lead; // Lead Info
+  @Input() email: Lead; // Lead Info
+  @Input() leadSource: Lead; // Lead Info
+  @Input() phone: Lead; // Lead Info
+  @Input() status: Lead; // Lead Info
+  @Input() coporateIdentity: Lead; // Lead Info
   @Input() description: Lead;
   @Input() referredBy: Lead;
-  @Input() billingAddress1: Lead; // Lead Info 
-  @Input() billingAddress2: Lead; // Lead Info 
-  @Input() billingCity: Lead; // Lead Info 
-  @Input() billingState: Lead; // Lead Info 
-  @Input() billingZip: Lead; // Lead Info 
-  @Input() shippingAddress1: Lead; // Lead Info 
-  @Input() shippingAddress2: Lead; // Lead Info 
-  @Input() shippingCity: Lead; // Lead Info 
-  @Input() shippingState: Lead; // Lead Info 
-  @Input() shippingZip: Lead; // Lead Info 
+  @Input() billingAddress1: Lead; // Lead Info
+  @Input() billingAddress2: Lead; // Lead Info
+  @Input() billingCity: Lead; // Lead Info
+  @Input() billingState: Lead; // Lead Info
+  @Input() billingZip: Lead; // Lead Info
+  @Input() shippingAddress1: Lead; // Lead Info
+  @Input() shippingAddress2: Lead; // Lead Info
+  @Input() shippingCity: Lead; // Lead Info
+  @Input() shippingState: Lead; // Lead Info
+  @Input() shippingZip: Lead; // Lead Info
   @Input() activities: any[];
   @Input() activityDate: Lead;
   @Input() activityTime: Lead;
@@ -53,7 +53,7 @@ export class StaticModeComponent implements OnInit {
   @Input() activityType: Lead;
   // CONTRUCTOR
   constructor(public dialog: MatDialog) {
-    console.log('Activities', this.activities);
+    // console.log('Activities', this.activities);
   }
 
   ngOnInit() {}
