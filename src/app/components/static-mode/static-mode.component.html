@@ -15,105 +15,48 @@
   <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
 
   <mat-card-content>
+
     <!-- ROW: STATIC DATA -->
     <div class="core-row" fxLayout="row">
+
       <!-- COLUMN #1 -->
       <div class="core-column" fxLayout="column" fxFlex="25%">
-        <!-- TITLE -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Title</small>
-          {{title}}
-        </div>
+        <app-lead-info [title]="" [department]="" [accountName]="" [salesRep]="" [email]="" [leadSource]="" [phone]=""
+          [status]="" [coporateIdentity]="" [billingAddress1]="" [billingAddress2]="" [billingCity]="" [billingState]=""
+          [billingZip]="" [shippingAddress1]="" [shippingAddress2]="" [shippingCity]="" [shippingState]=""
+          [shippingZip]=""></app-lead-info>
 
-        <!-- DEPARTMENT -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Department</small>
-          {{department}}
-        </div>
-
-        <!-- ACCOUNT NAME -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Account Name</small>
-          {{accountName}}
-        </div>
-
-        <!-- SALES REP -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Sales Rep</small>
-          {{salesRep}}
-        </div>
       </div>
+
       <mat-divider [vertical]="true" class="core-divider"></mat-divider>
 
       <!-- COLUMN #2 -->
-      <div class="core-column" fxLayout="column" fxFlex="25%">
-        <!-- EMAIL -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Email</small>
-          {{email}}
-        </div>
+      <!-- <div class="core-column" fxLayout="column" fxFlex="25%"></div>
 
-        <!-- LEAD SOURCE-->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Lead Source</small>
-          {{leadSource}}
-        </div>
-
-        <!-- PHONE -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Phone</small>
-          {{phone}}
-        </div>
-
-        <!-- STATUS -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Status</small>
-          {{status}}
-        </div>
-
-        <!-- CORPORATE IDENTITY-->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Corporate Identity</small>
-          {{coporateIdentity}}
-        </div>
-      </div>
-      <mat-divider [vertical]="true" class="core-divider"></mat-divider>
+      <mat-divider [vertical]="true" class="core-divider"></mat-divider> -->
 
       <!-- COLUMN #3 -->
-      <div class="core-column" fxLayout="column" fxFlex="50%">
-        <!-- BILLING ADDRESS -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Billing</small>
-          {{billingAddress1}}<br />
-          {{billingAddress2}}<br />
-          {{billingCity}}, {{billingState}} {{billingZip}}
-        </div>
+      <div class="core-column" fxLayout="column" fxFlex="75%">
+        <div class="activity-log">
+          <mat-list role="list">
 
-        <!-- BILLING ADDRESS -->
-        <div class="static-mode-display" fxLayout="column">
-          <small>Shipping</small>
-          {{shippingAddress1}}<br />
-          {{shippingAddress2}}<br />
-          {{shippingCity}}, {{shippingState}} {{shippingZip}}
+            <mat-list-item role="listitem" *ngFor="let activity of activities;  let i = index">
+              <app-lead-activity [activityDate]="activities[i].activityDate" [activityTime]="activities[i].activityTime"
+                [activityTitle]="activities[i].activityTitle" [activityOutcome]="activities[i].activityOutcome"
+                [activityType]="activities[i].activityType"></app-lead-activity>
+            </mat-list-item>
+
+          </mat-list>
         </div>
+        <!-- [end] 'activity-log' -->
       </div>
+
     </div>
     <!-- [end] ROW: STATIC DATA -->
 
     <mat-divider></mat-divider>
 
-    <div class="activity-log">
-      <mat-list role="list">
 
-        <mat-list-item role="listitem" *ngFor="let activity of activities;  let i = index">
-          <app-lead-activity [activityDate]="activities[i].activityDate" [activityTime]="activities[i].activityTime"
-            [activityTitle]="activities[i].activityTitle" [activityOutcome]="activities[i].activityOutcome"
-            [activityType]="activities[i].activityType"></app-lead-activity>
-        </mat-list-item>
-
-      </mat-list>
-    </div>
-    <!-- [end] 'activity-log' -->
 
     <!-- NOTES-->
     <div class="static-mode-display" fxLayout="column">

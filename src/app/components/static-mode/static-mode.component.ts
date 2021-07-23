@@ -24,27 +24,27 @@ export class StaticModeComponent implements OnInit {
   @Input() leadId: Lead;
   @Input() firstName: Lead;
   @Input() lastName: Lead;
-  @Input() title: Lead;
-  @Input() department: Lead;
-  @Input() accountName: Lead;
-  @Input() salesRep: Lead;
-  @Input() email: Lead;
-  @Input() leadSource: Lead;
-  @Input() phone: Lead;
-  @Input() status: Lead;
-  @Input() coporateIdentity: Lead;
+  @Input() title: Lead; // Lead Info 
+  @Input() department: Lead; // Lead Info 
+  @Input() accountName: Lead; // Lead Info 
+  @Input() salesRep: Lead; // Lead Info 
+  @Input() email: Lead; // Lead Info 
+  @Input() leadSource: Lead; // Lead Info 
+  @Input() phone: Lead; // Lead Info 
+  @Input() status: Lead; // Lead Info 
+  @Input() coporateIdentity: Lead; // Lead Info 
   @Input() description: Lead;
   @Input() referredBy: Lead;
-  @Input() billingAddress1: Lead;
-  @Input() billingAddress2: Lead;
-  @Input() billingCity: Lead;
-  @Input() billingState: Lead;
-  @Input() billingZip: Lead;
-  @Input() shippingAddress1: Lead;
-  @Input() shippingAddress2: Lead;
-  @Input() shippingCity: Lead;
-  @Input() shippingState: Lead;
-  @Input() shippingZip: Lead;
+  @Input() billingAddress1: Lead; // Lead Info 
+  @Input() billingAddress2: Lead; // Lead Info 
+  @Input() billingCity: Lead; // Lead Info 
+  @Input() billingState: Lead; // Lead Info 
+  @Input() billingZip: Lead; // Lead Info 
+  @Input() shippingAddress1: Lead; // Lead Info 
+  @Input() shippingAddress2: Lead; // Lead Info 
+  @Input() shippingCity: Lead; // Lead Info 
+  @Input() shippingState: Lead; // Lead Info 
+  @Input() shippingZip: Lead; // Lead Info 
   @Input() activities: any[];
   @Input() activityDate: Lead;
   @Input() activityTime: Lead;
