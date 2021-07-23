@@ -74,7 +74,7 @@ export class EditModeComponent implements OnInit {
   }
 
   save() {
-    this.dialogRef.close(this.form.value);
+    this.dialogRef.close();
   }
 
   close() {

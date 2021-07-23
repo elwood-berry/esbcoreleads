@@ -41,3 +41,6 @@
 ### GitHub  
 1. [JSON: United States](https://gist.github.com/mshafrir/2646763)
 1. [JSON: Countries](https://gist.github.com/keeguon/2310008)  
+
+
+1. [How to pass data to a MatDialog](https://www.nerd.vision/post/how-to-pass-data-to-a-matdialog)
