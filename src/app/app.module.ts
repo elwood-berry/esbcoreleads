@@ -24,6 +24,7 @@ import { ListModeComponent } from './components/list-mode/list-mode.component';
 import { LeadsService } from './services/leads/leads.service';
 import { LeadActivityComponent } from './components/lead-activity/lead-activity.component';
 import { LeadInfoComponent } from './components/lead-info/lead-info.component';
+import { AddActivityComponent } from './components/add-activity/add-activity.component';
 
 @NgModule({
   imports: [
@@ -41,7 +42,8 @@ import { LeadInfoComponent } from './components/lead-info/lead-info.component';
     EditModeComponent,
     ListModeComponent,
     LeadActivityComponent,
-    LeadInfoComponent
+    LeadInfoComponent,
+    AddActivityComponent
   ],
   bootstrap: [AppComponent],
   providers: [LeadsService]

@@ -7,7 +7,9 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
+// DIALOG COMPONENT
 import { EditModeComponent } from '../edit-mode/edit-mode.component';
+import { AddActivityComponent } from '../add-activity/add-activity.component';
 
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
@@ -80,7 +82,7 @@ export class StaticModeComponent implements OnInit {
   ];
 
   // CONTRUCTOR
-  constructor(public dialog: MatDialog) {
+  constructor(public dialog: MatDialog, public dialogAddActivity: MatDialog) {
     // console.log('Activities', this.activities);
   }
 
@@ -130,5 +132,12 @@ export class StaticModeComponent implements OnInit {
     // dialogRef.afterClosed().subscribe(result => {
     //   console.log(`Dialog result: ${result}`);
     // });
+  }
+
+  // ---
+  // ADD ACTIVITY
+  public addActivity() {
+    console.log('Add Activity Has Been Clicked.');
+    this.dialogAddActivity.open(AddActivityComponent);
   }
 }
