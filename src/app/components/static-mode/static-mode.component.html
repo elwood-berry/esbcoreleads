@@ -84,8 +84,8 @@
           <!-- 
             ACTIVITIES LIST
           -->
-          <mat-list class="activities-list" role="list" style="overflow-y: scroll;">
-            <mat-list-item role="listitem" *ngFor="let activity of activities;  let i = index">
+          <mat-list class="activities-list" role="list" style="overflow-y: scroll; height: 300px;">
+            <mat-list-item style="height: 90px;" role="listitem" *ngFor="let activity of activities;  let i = index">
               <app-lead-activity [activityDate]="activities[i].activityDate" [activityTime]="activities[i].activityTime"
                 [activityTitle]="activities[i].activityTitle" [activityOutcome]="activities[i].activityOutcome"
                 [activityType]="activities[i].activityType">
