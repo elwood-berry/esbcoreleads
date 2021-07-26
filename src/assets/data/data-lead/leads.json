@@ -72,7 +72,14 @@
 	"shippingAddress2": "",
 	"shippingCity": "Bentonville",
 	"shippingState": "AR",
-	"shippingZip": "72712"
+	"shippingZip": "72712",	
+	"activities": [{
+		"activityDate": "Monday, July 26, 2024",
+		"activityTime": "1PM CST",
+		"activityTitle": "Product development call with Jody",
+		"activityType": "Call",
+		"activityOutcome": "Etiam sit amet porttitor ante. Ut sit amet lectus nunc. Vivamus a lacus ornare, efficitur lacus id, gravida enim."
+	}]
 }, {
 	"leadId": 2,
 	"firstName": "Jon",
