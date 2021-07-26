@@ -47,6 +47,12 @@
 		"activityTitle": "Recap Meeting Notes: Jody @ Starbucks",
 		"activityType": "Notes",
 		"activityOutcome": "Aliquam gravida placerat quam vel rhoncus. Nulla interdum ullamcorper risus a imperdiet. Ut et consequat leo. Morbi ultrices felis nec ultricies lacinia."
+	}, {
+		"activityDate": "Friday, Aug 5, 2024",
+		"activityTime": "1:25PM CST",
+		"activityTitle": "Research about Jody's competition",
+		"activityType": "Task",
+		"activityOutcome": "Aliquam gravida placerat quam vel rhoncus. Nulla interdum ullamcorper risus a imperdiet. Ut et consequat leo. Morbi ultrices felis nec ultricies lacinia."
 	}]
 }, {
 	"leadId": 1,
