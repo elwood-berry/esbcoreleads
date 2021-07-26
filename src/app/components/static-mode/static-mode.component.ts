@@ -11,7 +11,7 @@ import { EditModeComponent } from '../edit-mode/edit-mode.component';
 
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
-// import { $EQ } from '@angular/compiler/src/chars';
+import { Status } from '../../interfaces/status/status';
 
 @Component({
   selector: 'app-static-mode',
@@ -54,6 +54,14 @@ export class StaticModeComponent implements OnInit {
   @Input() activityTitle: Lead;
   @Input() activityOutcome: Lead;
   @Input() activityType: Lead;
+
+  // PROPERTIES
+  public statuses: Status[] = [
+    { value: 'status-pending', viewValue: 'Pending' },
+    { value: 'status-completed', viewValue: 'Completed' },
+    { value: 'status-in-progress', viewValue: 'In Progress' }
+  ];
+
   // CONTRUCTOR
   constructor(public dialog: MatDialog) {
     // console.log('Activities', this.activities);

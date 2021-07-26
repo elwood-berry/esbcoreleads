@@ -36,9 +36,25 @@
       <div class="core-column" fxLayout="column" fxFlex="75%">
 
         <div class="activity-log">
-          <header>
+
+          <!-- 
+            ACTIVITIES HEADER
+          -->
+          <header class="activities-header" fxLayout="row">
             <h3>Activities</h3>
             <a href="">Add Activity</a>
+            <div class="" fxLayout="row">
+              <div class="">
+                <mat-select>
+                  <!-- <mat-option *ngFor="let food of foods" [value]="food.value"> -->
+                  <mat-option *ngFor="let status of statuses" [value]="status.value">
+                    {{status.viewValue}}
+                  </mat-option>
+                </mat-select>
+              </div>
+              <div class="">Sort: Type</div>
+              <div class="">Sort: Date</div>
+            </div>
           </header>
 
           <mat-list role="list">
