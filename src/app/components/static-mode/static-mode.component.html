@@ -81,28 +81,19 @@
             </div>
           </header>
 
-          <mat-list role="list">
-
-            <!-- <div *ngIf="activitiesCheck()">There are activities to display...</div> -->
-            <ng-container *ngFor="let activity of activities;  let i = index">
-
-              <!-- <mat-list-item role="listitem" >
+          <!-- 
+            ACTIVITIES LIST
+          -->
+          <mat-list class="activities-list" role="list" style="overflow-y: scroll;">
+            <mat-list-item role="listitem" *ngFor="let activity of activities;  let i = index">
+              <app-lead-activity [activityDate]="activities[i].activityDate" [activityTime]="activities[i].activityTime"
+                [activityTitle]="activities[i].activityTitle" [activityOutcome]="activities[i].activityOutcome"
+                [activityType]="activities[i].activityType">
                 There are no activities for this lead.
-              </mat-list-item> -->
-
-              <mat-list-item role="listitem">
-
-                <app-lead-activity [activityDate]="activities[i].activityDate"
-                  [activityTime]="activities[i].activityTime" [activityTitle]="activities[i].activityTitle"
-                  [activityOutcome]="activities[i].activityOutcome" [activityType]="activities[i].activityType">
-                  There are no activities for this lead.
-                </app-lead-activity>
-
-              </mat-list-item>
-
-            </ng-container>
-
+              </app-lead-activity>
+            </mat-list-item>
           </mat-list>
+
         </div>
         <!-- [end] 'activity-log' -->
       </div>
