@@ -44,9 +44,32 @@ $corePrimary: #003261;
 
 // ---
 .activities-header {
-  background-color: rgba(0, 255, 255, 0.1);
+  // background-color: rgba(0, 255, 255, 0.1);
   border-bottom: 1px solid #ddd;
-  box-shadow: 0px 1px 1px rgb(0 0 0 / 25%);
+  // box-shadow: 0px 1px 1px rgb(0 0 0 / 25%);
+
+  h3 {
+    // background-color: aqua;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 18px 0 0;
+    width: 100px;
+  }
+
+  button {
+    height: 35px;
+    margin: 10px 0 0;
+  }
+}
+
+.activities-sort {
+  margin-left: auto;
+}
+.sort-container {
+  // background-color: aqua;
+  width: inherit;
+  padding: 5px;
 }
 // ---
 

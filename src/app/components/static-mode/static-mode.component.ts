@@ -11,7 +11,9 @@ import { EditModeComponent } from '../edit-mode/edit-mode.component';
 
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
-import { Status } from '../../interfaces/status/status';
+import { SortStatus } from '../../interfaces/sort-status/sort-status';
+import { SortType } from '../../interfaces/sort-type/sort-type';
+import { SortDate } from '../../interfaces/sort-date/sort-date';
 
 @Component({
   selector: 'app-static-mode',
@@ -56,10 +58,25 @@ export class StaticModeComponent implements OnInit {
   @Input() activityType: Lead;
 
   // PROPERTIES
-  public statuses: Status[] = [
+  public statuses: SortStatus[] = [
     { value: 'status-pending', viewValue: 'Pending' },
     { value: 'status-completed', viewValue: 'Completed' },
     { value: 'status-in-progress', viewValue: 'In Progress' }
+  ];
+
+  public types: SortType[] = [
+    { value: 'type-task', viewValue: 'Task' },
+    { value: 'type-call', viewValue: 'Call' },
+    { value: 'type-note', viewValue: 'Note' },
+    { value: 'type-email', viewValue: 'Email' },
+    { value: 'type-meeting', viewValue: 'Meeting' },
+    { value: 'type-quality', viewValue: 'Quality Control' }
+  ];
+
+  public dates: SortDate[] = [
+    { value: 'date-recent', viewValue: 'Most Recent' },
+    { value: 'date-oldest', viewValue: 'Oldest' },
+    { value: 'date-newest', viewValue: 'Newest' }
   ];
 
   // CONTRUCTOR

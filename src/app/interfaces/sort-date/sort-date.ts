@@ -1,4 +1,4 @@
-export interface Status {
+export interface SortDate {
   value: string;
   viewValue: string;
 }

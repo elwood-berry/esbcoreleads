@@ -42,18 +42,42 @@
           -->
           <header class="activities-header" fxLayout="row">
             <h3>Activities</h3>
-            <a href="">Add Activity</a>
-            <div class="" fxLayout="row">
-              <div class="">
-                <mat-select>
-                  <!-- <mat-option *ngFor="let food of foods" [value]="food.value"> -->
-                  <mat-option *ngFor="let status of statuses" [value]="status.value">
-                    {{status.viewValue}}
-                  </mat-option>
-                </mat-select>
+            <button mat-flat-button color="primary">Add Activity</button>
+            <div class="activities-sort" fxLayout="row">
+
+              <div class="sort-container">
+                <mat-form-field appearance="fill">
+                  <mat-label>Status</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let status of statuses" [value]="status.value">
+                      {{status.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
               </div>
-              <div class="">Sort: Type</div>
-              <div class="">Sort: Date</div>
+
+              <div class="sort-container">
+                <mat-form-field appearance="fill">
+                  <mat-label>Type</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let type of types" [value]="type.value">
+                      {{type.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+              <div class="sort-container">
+                <mat-form-field appearance="fill">
+                  <mat-label>Date</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let date of dates" [value]="date.value">
+                      {{date.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
             </div>
           </header>
 
