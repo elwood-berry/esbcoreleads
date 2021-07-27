@@ -1,5 +1,13 @@
-# Activity Form 
-This is the form used to add, edit and update a single activity.
+# Profile
+This is the directory of all the components that make up the profile panel.
+
+**Profile Panel Information**
+Displays static information about the client, lead, oppurtunity, etc.
+
+Profile Panel Activity 
+Activity Header
+Activity Feed 
+
 
 --- 
 **Author**: Elwood Berry - 'me@elwoodberry.com'  

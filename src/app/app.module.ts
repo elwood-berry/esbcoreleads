@@ -16,6 +16,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 
 // COMPONENTS
 import { AppComponent } from './app.component';
+
+// COMPONENTS: DEMO
+import { ProfilePanelComponent } from './components/profile/profile-panel/profile-panel.component';
 import { StaticModeComponent } from './components/static-mode/static-mode.component';
 import { EditModeComponent } from './components/edit-mode/edit-mode.component';
 import { ListModeComponent } from './components/list-mode/list-mode.component';
@@ -49,7 +52,8 @@ import { DialogActivityFormComponent } from './components/dialogs/dialog-activit
     LeadInfoComponent,
     AddActivityComponent,
     DialogLeadFormComponent,
-    DialogActivityFormComponent
+    DialogActivityFormComponent,
+    ProfilePanelComponent
   ],
   bootstrap: [AppComponent],
   providers: [LeadsService]
