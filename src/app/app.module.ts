@@ -22,7 +22,7 @@ import { LeadsDataTableComponent } from './components/leads/leads-data-table/lea
 import { ProfilePanelComponent } from './components/profile/profile-panel/profile-panel.component';
 
 import { StaticModeComponent } from './components/static-mode/static-mode.component';
-import { EditModeComponent } from './components/edit-mode/edit-mode.component';
+// import { EditModeComponent } from './components/edit-mode/edit-mode.component';
 // import { ListModeComponent } from './components/list-mode/list-mode.component';
 
 // SERVICES
@@ -48,7 +48,7 @@ import { DialogActivityFormComponent } from './components/dialogs/dialog-activit
   declarations: [
     AppComponent,
     StaticModeComponent,
-    EditModeComponent,
+    // EditModeComponent,
     // ListModeComponent,
     LeadActivityComponent,
     LeadInfoComponent,

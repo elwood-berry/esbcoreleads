@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 // DIALOG COMPONENT
-import { EditModeComponent } from '../edit-mode/edit-mode.component';
+import { DialogLeadFormComponent } from '../dialogs/dialog-lead-form/dialog-lead-form.component';
 import { DialogActivityFormComponent } from '../dialogs/dialog-activity-form/dialog-activity-form.component';
 
 // INTERFACE
@@ -127,7 +127,7 @@ export class StaticModeComponent implements OnInit {
     };
 
     console.log('Shipping Zip', this.shippingZip);
-    this.dialog.open(EditModeComponent, dialogConfig);
+    this.dialog.open(DialogLeadFormComponent, dialogConfig);
 
     // dialogRef.afterClosed().subscribe(result => {
     //   console.log(`Dialog result: ${result}`);
