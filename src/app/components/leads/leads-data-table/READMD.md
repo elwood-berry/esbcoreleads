@@ -1,6 +1,9 @@
 # Leads Data Table
 This component displays all the leads in a table.  
 
+## Table With Expandable Rows
+See [example](https://material.angular.io/components/table/examples#table-expandable-rows)
+
 
 --- 
 **Author**: Elwood Berry - 'me@elwoodberry.com'  

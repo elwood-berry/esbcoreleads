@@ -19,11 +19,11 @@ import { AppComponent } from './app.component';
 
 // COMPONENTS: LEADS MANAGEMENT
 import { LeadsDataTableComponent } from './components/leads/leads-data-table/leads-data-table.component';
-import { ProfilePanelComponent } from './components/profile/profile-panel/profile-panel.component';
 
-import { StaticModeComponent } from './components/static-mode/static-mode.component';
-// import { EditModeComponent } from './components/edit-mode/edit-mode.component';
-// import { ListModeComponent } from './components/list-mode/list-mode.component';
+// COMPONENTS: PROFILE
+import { ProfilePanelComponent } from './components/profile/profile-panel/profile-panel.component';
+import { ProfileInfoComponent } from './components/profile/profile-info/profile-info.component';
+import { ProfileActivityComponent } from './components/profile/profile-activity/profile-activity.component';
 
 // SERVICES
 import { LeadsService } from './services/leads/leads.service';
@@ -47,7 +47,7 @@ import { DialogActivityFormComponent } from './components/dialogs/dialog-activit
   ],
   declarations: [
     AppComponent,
-    StaticModeComponent,
+    // StaticModeComponent,
     // EditModeComponent,
     // ListModeComponent,
     LeadActivityComponent,
@@ -56,7 +56,9 @@ import { DialogActivityFormComponent } from './components/dialogs/dialog-activit
     DialogLeadFormComponent,
     DialogActivityFormComponent,
     ProfilePanelComponent,
-    LeadsDataTableComponent
+    LeadsDataTableComponent,
+    ProfileInfoComponent,
+    ProfileActivityComponent
   ],
   bootstrap: [AppComponent],
   providers: [LeadsService]
