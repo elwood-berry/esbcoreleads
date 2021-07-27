@@ -23,7 +23,7 @@ import { ProfilePanelComponent } from './components/profile/profile-panel/profil
 
 import { StaticModeComponent } from './components/static-mode/static-mode.component';
 import { EditModeComponent } from './components/edit-mode/edit-mode.component';
-import { ListModeComponent } from './components/list-mode/list-mode.component';
+// import { ListModeComponent } from './components/list-mode/list-mode.component';
 
 // SERVICES
 import { LeadsService } from './services/leads/leads.service';
@@ -49,7 +49,7 @@ import { DialogActivityFormComponent } from './components/dialogs/dialog-activit
     AppComponent,
     StaticModeComponent,
     EditModeComponent,
-    ListModeComponent,
+    // ListModeComponent,
     LeadActivityComponent,
     LeadInfoComponent,
     AddActivityComponent,
