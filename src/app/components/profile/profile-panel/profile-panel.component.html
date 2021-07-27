@@ -1,3 +1,154 @@
-<p>
-profile-panel works!
-</p>
+<!-- 
+PROFILE: PANEL
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com
+-->
+<mat-card class="core-card">
+  <mat-card-header>
+    <!-- <div mat-card-avatar class="example-header-image"></div> -->
+    <mat-card-title
+      ><span [matBadge]="status" matBadgeOverlap="false"
+        >{{firstName}} {{lastName}}</span
+      ></mat-card-title
+    >
+    <mat-card-subtitle>{{description}}</mat-card-subtitle>
+
+    <!-- BUTTON: EDIT THIS LEAD -->
+    <mat-card-subtitle>
+      <button class="core-link-btn" mat-button (click)="editLead()">
+        [Edit Lead Information]
+      </button>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <!-- ROW: STATIC DATA -->
+    <div class="core-row" fxLayout="row">
+      <!-- COLUMN #1: LEFT -->
+      <div class="core-column" fxLayout="column" fxFlex="25%">
+        <!-- CMPNNT: LEAD INFO -->
+        <app-lead-info
+          [title]="title"
+          [department]="department"
+          [accountName]="accountName"
+          [salesRep]="salesRep"
+          [email]="email"
+          [leadSource]="leadSource"
+          [phone]="phone"
+          [status]="status"
+          [coporateIdentity]="coporateIdentity"
+          [billingAddress1]="billingAddress1"
+          [billingAddress2]="billingAddress2"
+          [billingCity]="billingCity"
+          [billingState]="billingState"
+          [billingZip]="billingZip"
+          [shippingAddress1]="shippingAddress1"
+          [shippingAddress2]="shippingAddress2"
+          [shippingCity]="shippingCity"
+          [shippingState]="shippingState"
+          [shippingZip]="shippingZip"
+        ></app-lead-info>
+      </div>
+
+      <mat-divider [vertical]="true" class="core-divider"></mat-divider>
+
+      <!-- COLUMN #2: RIGHT -->
+      <div class="core-column" fxLayout="column" fxFlex="75%">
+        <div class="activity-log">
+          <!-- 
+          ACTIVITIES HEADER
+        -->
+          <header class="activities-header" fxLayout="row">
+            <h3>Activities</h3>
+            <button mat-flat-button color="primary" (click)="addActivity()">
+              Add Activity
+            </button>
+            <div class="activities-sort" fxLayout="row">
+              <div class="sort-container">
+                <mat-form-field>
+                  <mat-label>Status</mat-label>
+                  <mat-select>
+                    <mat-option
+                      *ngFor="let status of statuses"
+                      [value]="status.value"
+                    >
+                      {{status.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+              <div class="sort-container">
+                <mat-form-field>
+                  <mat-label>Type</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let type of types" [value]="type.value">
+                      {{type.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+
+              <div class="sort-container">
+                <mat-form-field>
+                  <mat-label>Date</mat-label>
+                  <mat-select>
+                    <mat-option *ngFor="let date of dates" [value]="date.value">
+                      {{date.viewValue}}
+                    </mat-option>
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </div>
+          </header>
+
+          <!-- 
+          ACTIVITIES LIST
+        -->
+          <mat-list
+            class="activities-list"
+            role="list"
+            style="overflow-y: scroll; height: 300px;"
+          >
+            <mat-list-item
+              style="height: 90px;"
+              role="listitem"
+              *ngFor="let activity of activities;  let i = index"
+            >
+              <app-lead-activity
+                [activityDate]="activities[i].activityDate"
+                [activityTime]="activities[i].activityTime"
+                [activityTitle]="activities[i].activityTitle"
+                [activityOutcome]="activities[i].activityOutcome"
+                [activityType]="activities[i].activityType"
+              >
+                There are no activities for this lead.
+              </app-lead-activity>
+            </mat-list-item>
+          </mat-list>
+        </div>
+        <!-- [end] 'activity-log' -->
+      </div>
+    </div>
+    <!-- [end] ROW: STATIC DATA -->
+
+    <!-- <mat-divider></mat-divider> -->
+
+    <!-- NOTES-->
+    <!-- <div class="static-mode-display" fxLayout="column">
+    <small>Notes</small>
+    John likes websites like Nike, Adidas and Reebok. He also likes red
+    corvettes and brisket.
+  </div> -->
+  </mat-card-content>
+
+  <mat-card-actions>
+    <br />
+    <!-- <button mat-button>LIKE</button>
+  <button mat-button>SHARE</button> -->
+  </mat-card-actions>
+</mat-card>
+<!-- 
+Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com
+-->

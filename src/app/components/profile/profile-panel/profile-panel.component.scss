@@ -1,0 +1,128 @@
+/*
+PROFILE: PANEL
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com 
+*/
+
+// VARIABLES
+$corePrimary: #003261;
+
+// COMPONENT SECTIONS
+:host {
+  width: 100%;
+  // background-color: rgba(0, 255, 255, 0.1);
+
+  .core-card {
+    // background-color: rgba(0, 255, 255, 0.1);
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+
+    // HEADER
+    .mat-card-header {
+      // background-color: rgba(0, 255, 255, 0.1);
+
+      ::ng-deep .mat-card-header-text {
+        // background-color: rgba(255, 94, 0, 0.1);
+        margin: 0;
+
+        .mat-card-title {
+          .mat-badge {
+            .mat-badge-content {
+              border-radius: 3px;
+              right: -75px;
+              top: 0px;
+              width: 60px;
+            }
+          }
+        }
+      }
+    }
+
+    // ACTIONS
+    .mat-card-actions {
+      // background-color: rgba(255, 94, 0, 0.1);
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+// ---
+.activities-header {
+  // background-color: rgba(0, 255, 255, 0.1);
+  border-bottom: 1px solid #ddd;
+  // box-shadow: 0px 1px 1px rgb(0 0 0 / 25%);
+
+  h3 {
+    // background-color: aqua;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 18px 0 0;
+    width: 100px;
+  }
+
+  button {
+    height: 35px;
+    margin: 10px 0 0;
+  }
+}
+
+.activities-sort {
+  margin-left: auto;
+}
+.sort-container {
+  // background-color: aqua;
+  width: inherit;
+  padding: 5px;
+
+  .mat-form-field {
+  }
+}
+// ---
+
+// BUTTONS.
+.core-primary-btn {
+  background-color: $corePrimary;
+  color: #ffffff;
+  margin-bottom: 5px !important;
+  text-transform: uppercase;
+}
+.core-secondary-btn {
+  font-weight: 100;
+  margin-bottom: 5px !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-transform: uppercase;
+}
+.core-link-btn {
+  padding: 0;
+
+  ::ng-deep .mat-button-wrapper {
+    color: $corePrimary;
+    text-decoration: underline;
+  }
+}
+
+// ---
+
+// ---
+.activity-log {
+  // background-color: hsla(187, 100%, 50%, 0.1);
+}
+
+.activities-list {
+  .mat-list-item {
+  }
+}
+
+// ---
+.core-divider {
+  margin: 0 20px 0 0;
+}
+
+/*
+Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com
+*/
