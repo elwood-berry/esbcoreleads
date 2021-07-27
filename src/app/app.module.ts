@@ -26,6 +26,10 @@ import { LeadActivityComponent } from './components/lead-activity/lead-activity.
 import { LeadInfoComponent } from './components/lead-info/lead-info.component';
 import { AddActivityComponent } from './components/add-activity/add-activity.component';
 
+// COMPONENTS: DIALOGS
+import { DialogLeadFormComponent } from './components/dialogs/dialog-lead-form/dialog-lead-form.component';
+import { DialogActivityFormComponent } from './components/dialogs/dialog-activity-form/dialog-activity-form.component';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -43,7 +47,9 @@ import { AddActivityComponent } from './components/add-activity/add-activity.com
     ListModeComponent,
     LeadActivityComponent,
     LeadInfoComponent,
-    AddActivityComponent
+    AddActivityComponent,
+    DialogLeadFormComponent,
+    DialogActivityFormComponent
   ],
   bootstrap: [AppComponent],
   providers: [LeadsService]
