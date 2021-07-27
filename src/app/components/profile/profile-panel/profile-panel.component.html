@@ -107,7 +107,7 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
               role="listitem"
               *ngFor="let activity of activities;  let i = index"
             >
-              <app-lead-activity
+              <app-profile-activity
                 [activityDate]="activities[i].activityDate"
                 [activityTime]="activities[i].activityTime"
                 [activityTitle]="activities[i].activityTitle"
@@ -115,7 +115,7 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
                 [activityType]="activities[i].activityType"
               >
                 There are no activities for this lead.
-              </app-lead-activity>
+              </app-profile-activity>
             </mat-list-item>
           </mat-list>
         </div>

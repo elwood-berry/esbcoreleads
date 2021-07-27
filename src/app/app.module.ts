@@ -28,8 +28,7 @@ import { ProfileActivityComponent } from './components/profile/profile-activity/
 // SERVICES
 import { LeadsService } from './services/leads/leads.service';
 import { LeadActivityComponent } from './components/lead-activity/lead-activity.component';
-import { LeadInfoComponent } from './components/lead-info/lead-info.component';
-// import { AddActivityComponent } from './components/add-activity/add-activity.component';
+//import { LeadInfoComponent } from './components/lead-info/lead-info.component';
 
 // COMPONENTS: DIALOGS
 import { DialogLeadFormComponent } from './components/dialogs/dialog-lead-form/dialog-lead-form.component';
@@ -51,7 +50,7 @@ import { DialogActivityFormComponent } from './components/dialogs/dialog-activit
     // EditModeComponent,
     // ListModeComponent,
     LeadActivityComponent,
-    LeadInfoComponent,
+    // LeadInfoComponent,
     // AddActivityComponent,
     DialogLeadFormComponent,
     DialogActivityFormComponent,
