@@ -1,5 +1,5 @@
 /*
-APPLICATION NAME GOES HERE
+APPLICATION COMPONENT: LEADS MANAGEMENT
 Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
 */

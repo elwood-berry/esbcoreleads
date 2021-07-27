@@ -1,3 +1,69 @@
-<p>
-dialog-lead-form works!
-</p>
+<!-- 
+DIALOG: LEAD
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com
+-->
+<mat-card class="core-card">
+  <mat-card-header>
+    <mat-card-title>Edit Lead</mat-card-title>
+    <mat-card-subtitle
+      >The instructions for editing an existing lead goes
+      here.</mat-card-subtitle
+    >
+  </mat-card-header>
+
+  <mat-card-content fxLayout="column">
+    <!-- FIRST NAME -->
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput [value]="firstName" />
+    </mat-form-field>
+
+    <!-- LAST NAME -->
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput [value]="lastName" />
+    </mat-form-field>
+
+    <!-- EMAIL -->
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput [value]="email" />
+    </mat-form-field>
+
+    <!-- SALES REP -->
+    <mat-form-field appearance="fill">
+      <mat-label>Sales Rep</mat-label>
+      <input matInput [value]="salesRep" />
+    </mat-form-field>
+
+    <!-- LEAD SOURCE -->
+    <mat-form-field appearance="fill">
+      <mat-label>Lead Source</mat-label>
+      <input matInput [value]="leadSource" />
+    </mat-form-field>
+
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Optional Information
+        </mat-panel-title>
+        <!-- <mat-panel-description>
+This is a summary of the content
+</mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <p>Fields that are not required go here.</p>
+    </mat-expansion-panel>
+  </mat-card-content>
+  <mat-card-actions fxLayout="column">
+    <button mat-button (click)="save()" class="core-primary-btn">save</button>
+    <button mat-button (click)="save()" class="core-secondary-btn">
+      cancel
+    </button>
+  </mat-card-actions>
+</mat-card>
+
+<!-- 
+Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com
+-->
