@@ -122,6 +122,65 @@ $corePrimary: #003261;
   margin: 0 15px 0;
 }
 
+// ---
+/*
+ACTIVITY FEED : EXPANSION PANELS
+*/
+.activity-feed {
+  height: 300px;
+  overflow-y: scroll;
+
+  // ACCORDION
+  .mat-accordion {
+    // EXPANSION PANEL
+    ::ng-deep .mat-expansion-panel {
+      &:first-of-type {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+      &:last-of-type {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+
+      // HEADER
+      .mat-expansion-panel-header {
+        height: 55px;
+        padding: 0 0 0 50px;
+
+        .header-icon {
+          border: 1px solid #ddd;
+          left: 5px;
+          padding: 5px;
+          position: absolute;
+          top: 4px;
+        }
+
+        .header-title {
+          // background-color: rgba(0, 255, 255, 0.1);
+
+          .activity-type {
+            font-size: 12px;
+            font-weight: 100;
+          }
+          .activity-title {
+          }
+          .activity-date {
+            font-size: 12px;
+            font-weight: 100;
+          }
+        }
+
+        .header-menu-button {
+          position: absolute;
+          right: 15px;
+        }
+      }
+    }
+  }
+}
+// ---
+
 /*
 Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved. 
 Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com

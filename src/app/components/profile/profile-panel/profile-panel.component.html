@@ -5,41 +5,15 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 -->
 <mat-card class="core-card" aria-label="Profile panel card.">
   <mat-card-content>
-    <div
-      class="core-row"
-      fxLayout="row"
-      aria-label="Profile panel core grid row"
-    >
-      <div
-        class="core-column"
-        fxLayout="column"
-        fxFlex="25%"
-        aria-label="Profile panel core grid left column"
-      >
+    <div class="core-row" fxLayout="row" aria-label="Profile panel core grid row">
+      <div class="core-column" fxLayout="column" fxFlex="25%" aria-label="Profile panel core grid left column">
         <!-- CMPNNT: LEAD INFO -->
-        <app-profile-info
-          [firstName]="firstName"
-          [lastName]="lastName"
-          [title]="title"
-          [department]="department"
-          [accountName]="accountName"
-          [salesRep]="salesRep"
-          [email]="email"
-          [leadSource]="leadSource"
-          [phone]="phone"
-          [status]="status"
-          [coporateIdentity]="coporateIdentity"
-          [billingAddress1]="billingAddress1"
-          [billingAddress2]="billingAddress2"
-          [billingCity]="billingCity"
-          [billingState]="billingState"
-          [billingZip]="billingZip"
-          [shippingAddress1]="shippingAddress1"
-          [shippingAddress2]="shippingAddress2"
-          [shippingCity]="shippingCity"
-          [shippingState]="shippingState"
-          [shippingZip]="shippingZip"
-        ></app-profile-info>
+        <app-profile-info [firstName]="firstName" [lastName]="lastName" [title]="title" [department]="department"
+          [accountName]="accountName" [salesRep]="salesRep" [email]="email" [leadSource]="leadSource" [phone]="phone"
+          [status]="status" [coporateIdentity]="coporateIdentity" [billingAddress1]="billingAddress1"
+          [billingAddress2]="billingAddress2" [billingCity]="billingCity" [billingState]="billingState"
+          [billingZip]="billingZip" [shippingAddress1]="shippingAddress1" [shippingAddress2]="shippingAddress2"
+          [shippingCity]="shippingCity" [shippingState]="shippingState" [shippingZip]="shippingZip"></app-profile-info>
       </div>
 
       <mat-divider [vertical]="true" class="core-divider"></mat-divider>
@@ -60,10 +34,7 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
                 <mat-form-field>
                   <mat-label>Status</mat-label>
                   <mat-select>
-                    <mat-option
-                      *ngFor="let status of statuses"
-                      [value]="status.value"
-                    >
+                    <mat-option *ngFor="let status of statuses" [value]="status.value">
                       {{status.viewValue}}
                     </mat-option>
                   </mat-select>
@@ -97,16 +68,51 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
           <!-- 
           ACTIVITIES LIST
         -->
-          <div style="height:300px; overflow-y: scroll">
+          <div class="activity-feed">
             <mat-accordion>
-              <app-profile-activity
+              <!-- <app-profile-activity
                 *ngFor="let activity of activities;  let i = index"
                 [activityDate]="activities[i].activityDate"
                 [activityTime]="activities[i].activityTime"
                 [activityTitle]="activities[i].activityTitle"
                 [activityOutcome]="activities[i].activityOutcome"
                 [activityType]="activities[i].activityType"
-              ></app-profile-activity>
+              ></app-profile-activity> -->
+
+              <!-- 
+                
+              -->
+              <mat-expansion-panel class="single-activity" hideToggle
+                *ngFor="let activity of activities;  let i = index">
+                <mat-expansion-panel-header fxLayout="row">
+
+                  <div class="header-icon">
+                    <mat-icon aria-hidden="false" aria-label="">phone</mat-icon>
+                  </div>
+
+                  <div class="header-title">
+                    <div class="activity-type">{{activities[i].activityType}}</div>
+                    <div class="activity-title">{{activities[i].activityTitle}}</div>
+                    <div class="activity-date">{{activities[i].activityDate}}</div>
+                  </div>
+
+                  <div class="header-menu-button">
+                    <button class="lead-activity-menu" mat-icon-button aria-label="" [matMenuTriggerFor]="menu" >
+                      <mat-icon>more_vert</mat-icon>
+                    </button>
+                  </div>
+
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Edit</button>
+                    <button mat-menu-item>Delete</button>
+                  </mat-menu>
+
+                </mat-expansion-panel-header>
+                <p>{{activities[i].activityOutcome}}</p>
+              </mat-expansion-panel>
+              <!-- 
+
+              -->
             </mat-accordion>
           </div>
         </div>
