@@ -4,34 +4,17 @@ Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com 
 */
 :host {
-  background-color: aqua;
+  // background-color: aqua;
 
   // HEADER ---
   header {
+    height: 60px !important;
+    padding-top: 10px;
     position: relative;
 
-    // STATUS BADGE
-    .mat-badge {
-      background-color: aquamarine;
-      display: block;
-      height: 25px;
-      margin: 0;
-      padding: 0;
-      position: relative;
-      width: inherit;
-
-      .mat-badge-content {
-        background-color: #bfbfbf;
-        border-radius: 4px;
-        color: #212121;
-        font-weight: 100;
-        height: 22px;
-        left: 0;
-        line-height: 22px;
-        right: 0;
-        top: 0;
-        width: 90px;
-      }
+    span {
+      color: #005ea2;
+      font-weight: 100;
     }
 
     // DISPLAY FULL NAME
@@ -41,6 +24,27 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
       margin: 0;
       padding: 0;
       width: inherit;
+
+      // BUTTON: MINI FAB
+      button {
+        background-color: #848484;
+        height: 25px;
+        top: -8px;
+        width: 25px;
+
+        ::ng-deep .mat-button-wrapper {
+          padding: 0;
+          line-height: 24px;
+          position: absolute;
+          left: 1px;
+          top: 1px;
+
+          .mat-icon {
+            font-size: 16px;
+            vertical-align: inherit;
+          }
+        }
+      }
     }
     // DIVIDER
     .mat-divider {
