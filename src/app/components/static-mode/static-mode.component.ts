@@ -9,7 +9,7 @@ import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 
 // DIALOG COMPONENT
 import { EditModeComponent } from '../edit-mode/edit-mode.component';
-import { AddActivityComponent } from '../add-activity/add-activity.component';
+import { DialogActivityFormComponent } from '../dialogs/dialog-activity-form/dialog-activity-form.component';
 
 // INTERFACE
 import { Lead } from '../../interfaces/lead/lead';
@@ -138,6 +138,6 @@ export class StaticModeComponent implements OnInit {
   // ADD ACTIVITY
   public addActivity() {
     console.log('Add Activity Has Been Clicked.');
-    this.dialogAddActivity.open(AddActivityComponent);
+    this.dialogAddActivity.open(DialogActivityFormComponent);
   }
 }

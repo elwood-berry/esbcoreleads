@@ -44,7 +44,7 @@ export class DialogLeadFormComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private dialogRef: MatDialogRef<EditModeComponent>,
+    private dialogRef: MatDialogRef<DialogLeadFormComponent>,
     @Inject(MAT_DIALOG_DATA) data
   ) {
     this.firstName = data.firstName;
