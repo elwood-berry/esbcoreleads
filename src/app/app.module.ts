@@ -25,14 +25,12 @@ import { ProfilePanelComponent } from './components/profile/profile-panel/profil
 import { ProfileInfoComponent } from './components/profile/profile-info/profile-info.component';
 import { ProfileActivityComponent } from './components/profile/profile-activity/profile-activity.component';
 
-// SERVICES
-import { LeadsService } from './services/leads/leads.service';
-import { LeadActivityComponent } from './components/lead-activity/lead-activity.component';
-//import { LeadInfoComponent } from './components/lead-info/lead-info.component';
-
 // COMPONENTS: DIALOGS
 import { DialogLeadFormComponent } from './components/dialogs/dialog-lead-form/dialog-lead-form.component';
 import { DialogActivityFormComponent } from './components/dialogs/dialog-activity-form/dialog-activity-form.component';
+
+// SERVICES
+import { LeadsService } from './services/leads/leads.service';
 
 @NgModule({
   imports: [
@@ -46,12 +44,6 @@ import { DialogActivityFormComponent } from './components/dialogs/dialog-activit
   ],
   declarations: [
     AppComponent,
-    // StaticModeComponent,
-    // EditModeComponent,
-    // ListModeComponent,
-    LeadActivityComponent,
-    // LeadInfoComponent,
-    // AddActivityComponent,
     DialogLeadFormComponent,
     DialogActivityFormComponent,
     ProfilePanelComponent,
