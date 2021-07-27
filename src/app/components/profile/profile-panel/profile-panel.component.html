@@ -97,27 +97,18 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
           <!-- 
           ACTIVITIES LIST
         -->
-          <mat-list
-            class="activities-list"
-            role="list"
-            style="overflow-y: scroll; height: 300px;"
-          >
-            <mat-list-item
-              style="height: 90px;"
-              role="listitem"
-              *ngFor="let activity of activities;  let i = index"
-            >
+          <div style="height:300px; overflow-y: scroll">
+            <mat-accordion>
               <app-profile-activity
+                *ngFor="let activity of activities;  let i = index"
                 [activityDate]="activities[i].activityDate"
                 [activityTime]="activities[i].activityTime"
                 [activityTitle]="activities[i].activityTitle"
                 [activityOutcome]="activities[i].activityOutcome"
                 [activityType]="activities[i].activityType"
-              >
-                There are no activities for this lead.
-              </app-profile-activity>
-            </mat-list-item>
-          </mat-list>
+              ></app-profile-activity>
+            </mat-accordion>
+          </div>
         </div>
         <!-- [end] 'activity-log' -->
       </div>

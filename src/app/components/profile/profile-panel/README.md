@@ -31,6 +31,25 @@ The header of the profile panel. Esentially the header of a simple [card](https:
 
 ```  
 
+### The Old Activity Feed  
+Originally a [List](https://material.angular.io/components/list/overview).
+```html  
+
+<mat-list class="activities-list" role="list" style="overflow-y: scroll; height: 300px;">
+  <mat-list-item style="height: 90px;" role="listitem" *ngFor="let activity of activities;  let i = index">
+    
+    <app-profile-activity
+      [activityDate]="activities[i].activityDate"
+      [activityTime]="activities[i].activityTime"
+      [activityTitle]="activities[i].activityTitle"
+      [activityOutcome]="activities[i].activityOutcome"
+      [activityType]="activities[i].activityType"
+    ></app-profile-activity>
+  
+  </mat-list-item>
+</mat-list>
+
+```  
 
 --- 
 **Author**: Elwood Berry - 'me@elwoodberry.com'  
