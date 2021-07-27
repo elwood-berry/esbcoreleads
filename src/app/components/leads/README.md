@@ -1,0 +1,8 @@
+# Lead
+This is the directory of all the components that make up the lead management user interface.  
+
+
+--- 
+**Author**: Elwood Berry - 'me@elwoodberry.com'  
+This code is brought to you by Elwood Berry @www.elwoodberry.com.  
+> Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved. Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com 
