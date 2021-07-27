@@ -8,7 +8,7 @@ At it's core 'profile-panel' is an [expansion panel](https://material.angular.io
 ## LEGACY
 Code that didn't make the cut.  
 
-### The Old Header  
+### The Single Activity   
 Inital approach had no way of expanding to see the details of the activity. Moved to an [expansion panel](https://material.angular.io/components/expansion/overview).  
 ```html  
 
