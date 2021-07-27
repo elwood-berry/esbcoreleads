@@ -3,31 +3,23 @@ PROFILE: PANEL
 Author: 'me@elwoodberry.com'
 This code is brought to you by Elwood Berry @www.elwoodberry.com
 -->
-<mat-card class="core-card">
-  <mat-card-header>
-    <!-- <div mat-card-avatar class="example-header-image"></div> -->
-    <mat-card-title
-      ><span [matBadge]="status" matBadgeOverlap="false"
-        >{{firstName}} {{lastName}}</span
-      ></mat-card-title
-    >
-    <mat-card-subtitle>{{description}}</mat-card-subtitle>
-
-    <!-- BUTTON: EDIT THIS LEAD -->
-    <mat-card-subtitle>
-      <button class="core-link-btn" mat-button (click)="editLead()">
-        [Edit Lead Information]
-      </button>
-    </mat-card-subtitle>
-  </mat-card-header>
-
+<mat-card class="core-card" aria-label="Profile panel card.">
   <mat-card-content>
-    <!-- ROW: STATIC DATA -->
-    <div class="core-row" fxLayout="row">
-      <!-- COLUMN #1: LEFT -->
-      <div class="core-column" fxLayout="column" fxFlex="25%">
+    <div
+      class="core-row"
+      fxLayout="row"
+      aria-label="Profile panel core grid row"
+    >
+      <div
+        class="core-column"
+        fxLayout="column"
+        fxFlex="25%"
+        aria-label="Profile panel core grid left column"
+      >
         <!-- CMPNNT: LEAD INFO -->
-        <app-lead-info
+        <app-profile-info
+          [firstName]="firstName"
+          [lastName]="lastName"
           [title]="title"
           [department]="department"
           [accountName]="accountName"
@@ -47,7 +39,7 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
           [shippingCity]="shippingCity"
           [shippingState]="shippingState"
           [shippingZip]="shippingZip"
-        ></app-lead-info>
+        ></app-profile-info>
       </div>
 
       <mat-divider [vertical]="true" class="core-divider"></mat-divider>

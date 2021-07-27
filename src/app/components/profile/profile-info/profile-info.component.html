@@ -1,3 +1,109 @@
-<p>
-profile-info works!
-</p>
+<!-- 
+PROFILE: INFORMATION
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com
+-->
+
+<header style="height:70px; display: block; overflow:hidden;">
+  <span matBadge="New" matBadgeOverlap="false"></span>
+  <div class="display-full-name">
+    {{firstName}} {{lastName}}
+
+    <button
+      mat-mini-fab
+      color="primary"
+      aria-label="Button to launch edit form."
+      (click)="editLead()"
+    >
+      <mat-icon>settings</mat-icon>
+    </button>
+  </div>
+  <mat-divider></mat-divider>
+</header>
+
+<!-- TITLE -->
+<div class="static-mode-display" fxLayout="column" *ngIf="title">
+  <small>Title</small>
+  {{title}}
+</div>
+
+<!-- DEPARTMENT -->
+<div class="static-mode-display" fxLayout="column" *ngIf="department">
+  <small>Department</small>
+  {{department}}
+</div>
+
+<!-- ACCOUNT NAME -->
+<div class="static-mode-display" fxLayout="column" *ngIf="accountName">
+  <small>Account Name</small>
+  {{accountName}}
+</div>
+
+<!-- SALES REP -->
+<div class="static-mode-display" fxLayout="column" *ngIf="salesRep">
+  <small>Sales Rep</small>
+  {{salesRep}}
+</div>
+
+<!-- EMAIL -->
+<div class="static-mode-display" fxLayout="column" *ngIf="email">
+  <small>Email</small>
+  {{email}}
+</div>
+
+<!-- LEAD SOURCE-->
+<div class="static-mode-display" fxLayout="column" *ngIf="leadSource">
+  <small>Lead Source</small>
+  {{leadSource}}
+</div>
+
+<!-- PHONE -->
+<div class="static-mode-display" fxLayout="column" *ngIf="phone">
+  <small>Phone</small>
+  {{phone}}
+</div>
+
+<!-- STATUS -->
+<!-- <div class="static-mode-display" fxLayout="column" *ngIf="status">
+<small>Status</small>
+{{status}}
+</div> -->
+
+<!-- CORPORATE IDENTITY-->
+<div class="static-mode-display" fxLayout="column" *ngIf="coporateIdentity">
+  <small>Corporate Identity</small>
+  {{coporateIdentity}}
+</div>
+
+<!-- BILLING ADDRESS -->
+<div class="static-mode-display" fxLayout="column">
+  <small>Billing</small>
+  <div fxLayout="column">
+    <span *ngIf="billingAddress1">{{billingAddress1}}</span>
+    <span *ngIf="billingAddress2">{{billingAddress2}}</span>
+  </div>
+  <div fxLayout="row">
+    <span *ngIf="billingCity">{{billingCity}}, </span>
+    <span *ngIf="billingState">{{billingState}}</span>
+    <span *ngIf="billingZip">{{billingZip}}</span>
+  </div>
+</div>
+
+<!-- BILLING ADDRESS -->
+<div class="static-mode-display" fxLayout="column">
+  <small>Shipping</small>
+  <div fxLayout="column">
+    <span *ngIf="shippingAddress1">{{shippingAddress1}}</span>
+    <span *ngIf="shippingAddress2">{{shippingAddress2}}</span>
+  </div>
+  <div fxLayout="row">
+    <span *ngIf="shippingCity">{{shippingCity}}, </span>
+    <span *ngIf="shippingState">{{shippingState}}</span>
+    <span *ngIf="shippingZip">{{shippingZip}}</span>
+  </div>
+</div>
+
+<!-- 
+Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be found in the LICENSE file at http://www.elwoodberry.com
+-->

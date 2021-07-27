@@ -82,57 +82,13 @@ export class ProfilePanelComponent implements OnInit {
   ];
 
   // CONTRUCTOR
-  constructor(public dialog: MatDialog, public dialogAddActivity: MatDialog) {
+  constructor(public dialogAddActivity: MatDialog) {
     // console.log('Activities', this.activities);
   }
 
   ngOnInit() {}
 
   // ---
-
-  // EDIT LEAD
-  public editLead() {
-    console.log('Edit Lead Has Been Clicked.');
-
-    const dialogConfig = new MatDialogConfig();
-    // const dialogRef = this.dialog.open(EditModeComponent, dialogConfig);
-
-    dialogConfig.disableClose = true;
-    dialogConfig.autoFocus = true;
-
-    dialogConfig.data = {
-      firstName: this.firstName,
-      lastName: this.lastName,
-      title: this.title,
-      department: this.department,
-      accountName: this.accountName,
-      salesRep: this.salesRep,
-      email: this.email,
-      leadSource: this.leadSource,
-      phone: this.phone,
-      status: this.status,
-      coporateIdentity: this.coporateIdentity,
-      description: this.description,
-      referredBy: this.referredBy,
-      billingAddress1: this.billingAddress1,
-      billingAddress2: this.billingAddress2,
-      billingCity: this.billingCity,
-      billingState: this.billingState,
-      billingZip: this.billingZip,
-      shippingAddress1: this.shippingAddress1,
-      shippingAddress2: this.shippingAddress2,
-      shippingCity: this.shippingCity,
-      shippingState: this.shippingState,
-      shippingZip: this.shippingZip
-    };
-
-    console.log('Shipping Zip', this.shippingZip);
-    this.dialog.open(DialogLeadFormComponent, dialogConfig);
-
-    // dialogRef.afterClosed().subscribe(result => {
-    //   console.log(`Dialog result: ${result}`);
-    // });
-  }
 
   // ---
   // ADD ACTIVITY

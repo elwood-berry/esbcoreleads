@@ -1,0 +1,64 @@
+/*
+PROFILE: INFORMATION
+Author: 'me@elwoodberry.com'
+This code is brought to you by Elwood Berry @www.elwoodberry.com 
+*/
+:host {
+  background-color: aqua;
+
+  // HEADER ---
+  header {
+    position: relative;
+
+    // STATUS BADGE
+    .mat-badge {
+      background-color: aquamarine;
+      display: block;
+      height: 25px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: inherit;
+
+      .mat-badge-content {
+        background-color: #bfbfbf;
+        border-radius: 4px;
+        color: #212121;
+        font-weight: 100;
+        height: 22px;
+        left: 0;
+        line-height: 22px;
+        right: 0;
+        top: 0;
+        width: 90px;
+      }
+    }
+
+    // DISPLAY FULL NAME
+    .display-full-name {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      padding: 0;
+      width: inherit;
+    }
+    // DIVIDER
+    .mat-divider {
+      bottom: 0;
+    }
+  }
+  // [end] HEADER ---
+}
+
+/*
+STATIC MODE
+*/
+.static-mode-display {
+  background-color: transparent;
+  padding: 5px 0;
+
+  small {
+    color: rgb(110, 110, 110);
+    font-weight: 100;
+  }
+}
