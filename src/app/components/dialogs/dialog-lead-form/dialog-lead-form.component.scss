@@ -51,6 +51,23 @@ $corePrimary: #003261;
   text-transform: uppercase;
 }
 
+// ---
+// OPTIONAL FORM FIELDS
+.optional-form-fields {
+  // background-color: aqua;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+
+  //
+  .mat-expansion-panel-header {
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+  }
+}
+// ---
+
 /*
 -------------------------------------------------
 Copyright 2021 ElwoodBerry.com LLC. All Rights Reserved.

@@ -6,10 +6,8 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
 <mat-card class="core-card">
   <mat-card-header>
     <mat-card-title>Edit Lead</mat-card-title>
-    <mat-card-subtitle
-      >The instructions for editing an existing lead goes
-      here.</mat-card-subtitle
-    >
+    <mat-card-subtitle>The instructions for editing an existing lead goes
+      here.</mat-card-subtitle>
   </mat-card-header>
 
   <mat-card-content fxLayout="column">
@@ -43,16 +41,42 @@ This code is brought to you by Elwood Berry @www.elwoodberry.com
       <input matInput [value]="leadSource" />
     </mat-form-field>
 
-    <mat-expansion-panel hideToggle>
+    <mat-expansion-panel class="optional-form-fields" hideToggle>
       <mat-expansion-panel-header>
         <mat-panel-title>
           Optional Information
         </mat-panel-title>
-        <!-- <mat-panel-description>
-This is a summary of the content
-</mat-panel-description> -->
       </mat-expansion-panel-header>
-      <p>Fields that are not required go here.</p>
+
+      <!-- 
+        OPTIONAL FIELDS  
+        ------------------------
+        title: string;
+        department: string;
+        accountName: string;
+        phone: string;
+        status: string;
+        coporateIdentity: string;
+        description: string;
+        referredBy: string;
+        billingAddress1: string;
+        billingAddress2: string;
+        billingCity: string;
+        billingState: string;
+        billingZip: string;
+        shippingAddress1: string;
+        shippingAddress2: string;
+        shippingCity: string;
+        shippingState: string;
+        shippingZip: string;
+      -->
+
+      <!-- TITLE -->
+      <mat-form-field appearance="fill">
+        <mat-label>Title</mat-label>
+        <input matInput/>
+      </mat-form-field>
+
     </mat-expansion-panel>
   </mat-card-content>
   <mat-card-actions fxLayout="column">
